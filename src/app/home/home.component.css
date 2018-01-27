@@ -1,0 +1,17 @@
+.beers{
+  text-align: center;
+}
+.beer{
+  height: 45%;
+  width: 45%;
+}
+
+#logo{
+  margin-top: 5vh;
+  text-align: center;
+}
+#logo img{
+  margin: 0 auto;
+  height: 50%;
+  width: 50%;
+}
