@@ -15,16 +15,19 @@ export class HomeComponent implements OnInit {
   beerDescription: string = '';
 
   insertText(beer){
-    if beer == "blonde"{
+    if (beer == "blonde"){
       this.beerDescription = "Blonde bomber was the first beer ever."
-    }else if{
-      beer == "dos"{
+    }else if(beer == "dos"){
         this.beerDescription = "Dos was the first beer ever."
-      }
-    }else{
-      this.beerDescription = beer;
+    }else if(beer == "coffin"){
+        this.beerDescription = "Coffin was the first beer ever."
+    }else if(beer == "kings"){
+        this.beerDescription = "Kings was the first beer ever."
+    }else if(beer == "porter"){
+        this.beerDescription = "Porter was the first beer ever."
+    }else if(beer == "luckey"){
+        this.beerDescription = "Luckey was the first beer ever."
     }
-    console.log(this.beerDescription);
   }
 
 }
