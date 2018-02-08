@@ -1,7 +1,20 @@
+a{
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .container{
   background-color: rgb(32,30,30);
   min-height: 98vh;
 }
+
+.nav a{
+  display: inline-block;
+  color: white;
+  font-size: 1.5em;
+  margin-right: .3em;
+}
+
 #total{
   min-width: 95vw;
   min-height: 98vh;
