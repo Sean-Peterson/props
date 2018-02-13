@@ -1,6 +1,15 @@
+@font-face {
+    font-family: military;
+    src: url("../assets/fonts/boston.ttf") format("opentype");
+}
+
 a{
   cursor: pointer;
   text-decoration: none;
+}
+
+.ammo{
+  font-family: military;
 }
 
 .container{
@@ -8,17 +17,21 @@ a{
   min-height: 98vh;
 }
 
+.nav{
+  padding-top: 3vh;
+}
+
 .nav a{
+  margin: 0 auto;
   display: inline-block;
   color: white;
   font-size: 1.5em;
-  margin-right: .3em;
+  /* margin-right: .3em; */
 }
 
 #total{
   min-width: 95vw;
   min-height: 98vh;
-  background-image: url("../assets/images/metalBG.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../assets/images/metalBG2.jpg");
   background-size: cover;
 }

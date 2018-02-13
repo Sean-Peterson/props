@@ -1,16 +1,29 @@
+.ammo{
+  font-family: military;
+}
+
 .beers{
   padding-top: 10vh;
   padding-bottom: 22vh;
 }
 
 .beer{
+  cursor: pointer;
   height: 45%;
   width: 45%;
+}
+
+.bigHeader{
+  font-size: 3em;
 }
 
 .col-sm-3{
   margin: 0 auto;
   padding-top: 30px;
+}
+
+.gMaps{
+  max-height: 500px;
 }
 
 .words{
@@ -31,6 +44,14 @@
   margin: 0 auto;
   height: 90%;
   width: 90%;
+}
+
+#owners{
+  max-width: 100%;
+}
+
+#veteran{
+  margin-bottom: 10vh;
 }
 
 #visit{
