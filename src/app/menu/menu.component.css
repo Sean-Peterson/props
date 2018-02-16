@@ -1,0 +1,21 @@
+.ammo{
+  font-family: military;
+}
+
+.centered{
+  margin-top: 5vh;
+  text-align: center;
+}
+
+.foodName{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.price{
+  float: right;
+}
+
+.words{
+  color: white;
+}
