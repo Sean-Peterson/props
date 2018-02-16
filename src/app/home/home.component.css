@@ -63,3 +63,35 @@
 #visit h1{
   padding-bottom: 20px;
 }
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .gMaps{
+      display: none;
+    }
+
+    #about{
+      padding-bottom: 10vh;
+      padding-top: 10vh;
+    }
+
+    #about span{
+      display: block;
+    }
+
+    #logo img{
+      height: 100%;
+      width: 100%;
+    }
+
+    #note{
+      margin-top: 2vh;
+    }
+
+    #veteran{
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+    }
+}
