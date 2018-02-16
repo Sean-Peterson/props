@@ -1,0 +1,27 @@
+[debug] [2018-02-16T19:37:21.174Z] ----------------------------------------------------------------------
+[debug] [2018-02-16T19:37:21.174Z] Command:       Q:\programFiles\node.exe C:\Users\Sean\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase open
+[debug] [2018-02-16T19:37:21.174Z] CLI Version:   3.17.4
+[debug] [2018-02-16T19:37:21.174Z] Platform:      win32
+[debug] [2018-02-16T19:37:21.174Z] Node Version:  v8.9.4
+[debug] [2018-02-16T19:37:21.174Z] Time:          Fri Feb 16 2018 13:37:21 GMT-0600 (Central Standard Time)
+[debug] [2018-02-16T19:37:21.174Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-02-16T19:37:21.190Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-02-16T19:37:21.190Z] > authorizing via signed-in user
+[debug] [2018-02-16T19:37:21.190Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-02-16T19:37:21.190Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/vwXWSNATSjU7mmijJg76dy205Ob3ElhW5SiLxsIBZsQ',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri Feb 16 2018 13:37:21 GMT-0600 (Central Standard Time)
+[debug] [2018-02-16T19:37:21.490Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-16T19:37:21.506Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/props-site  
+  
+ Fri Feb 16 2018 13:37:21 GMT-0600 (Central Standard Time)
+[debug] [2018-02-16T19:37:21.932Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-16T19:37:21.932Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/props-site/tokens  
+  
+ Fri Feb 16 2018 13:37:21 GMT-0600 (Central Standard Time)
+[debug] [2018-02-16T19:37:22.290Z] <<< HTTP RESPONSE 200

@@ -15,7 +15,16 @@ import { FourKingsComponent } from './beers/four-kings/four-kings.component';
 import { PorterComponent } from './beers/porter/porter.component';
 import { LuckeyComponent } from './beers/luckey/luckey.component';
 import { CultureComponent } from './culture/culture.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
@@ -35,7 +44,9 @@ import { CultureComponent } from './culture/culture.component';
     BrowserModule,
     HttpModule,
     routing,
-    AlertModule.forRoot()
+    AlertModule.forRoot(),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
