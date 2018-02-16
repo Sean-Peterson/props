@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
     }else if(beer == "kings"){
         this.beerDescription = "4 Kings is rich in flavor and is seperated from its English counterparts by its slight citrus accent, bitterness, and dry finish."
     }else if(beer == "porter"){
-        this.beerDescription = "Props Oil Porter pours black with a light tan colored head. This porter has a substantial, complex, and flavorful roast character that tastes of dark chocolate and roasted grains. A fan favorite with it's characteristics of being not too sweet nor too bitter with a smooth aftertaste."
+        this.beerDescription = "Prop Oil Porter pours black with a light tan colored head. This porter has a substantial, complex, and flavorful roast character that tastes of dark chocolate and roasted grains. A fan favorite with it's characteristics of being not too sweet nor too bitter with a smooth aftertaste."
     }else if(beer == "luckey"){
         this.beerDescription = "Luckey O'Neill Lager is a Vienna style lager. It's light golden-brown coloring combines with a lager's smooth taste which give this lager an all day lawnmower beer feel. "
     }

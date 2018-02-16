@@ -14,6 +14,7 @@ import { CoffinComponent } from './beers/coffin/coffin.component';
 import { FourKingsComponent } from './beers/four-kings/four-kings.component';
 import { PorterComponent } from './beers/porter/porter.component';
 import { LuckeyComponent } from './beers/luckey/luckey.component';
+import { CultureComponent } from './culture/culture.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { LuckeyComponent } from './beers/luckey/luckey.component';
     CoffinComponent,
     FourKingsComponent,
     PorterComponent,
-    LuckeyComponent
+    LuckeyComponent,
+    CultureComponent
   ],
   imports: [
     BrowserModule,
