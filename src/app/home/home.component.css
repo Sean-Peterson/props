@@ -68,6 +68,10 @@
   and (min-device-width: 375px)
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3) {
+    .beerDescription{
+      display: none;
+    }
+
     .gMaps{
       display: none;
     }
@@ -79,6 +83,10 @@
 
     #about span{
       display: block;
+    }
+
+    #logo{
+      margin-top: 5vh;
     }
 
     #logo img{
