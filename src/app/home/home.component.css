@@ -35,11 +35,13 @@
   padding-bottom: 18vh;
   padding-top: 18vh;
 }
+
 #logo{
   text-align: center;
   min-width: 100%;
   min-height: 100%;
 }
+
 #logo img{
   margin: 0 auto;
   height: 90%;
