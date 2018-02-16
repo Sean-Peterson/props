@@ -1,0 +1,41 @@
+.ammo{
+  font-family: military;
+}
+
+.beer{
+  height: 45%;
+  width: 45%;
+}
+
+.beerName{
+  margin-top: 3vh;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.beerDescription{
+  color: white;
+  font-family: sans-serif;
+  font-size: .75em;
+
+}
+
+.words{
+  color: white;
+  text-align: center;
+}
+
+#beers{
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+}
+
+#ontap{
+  color: white;
+  padding-top: 10vh;
+}
+
+#series{
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
