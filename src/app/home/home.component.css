@@ -40,12 +40,15 @@
   text-align: center;
   min-width: 100%;
   min-height: 100%;
+  margin-bottom: 5vh;
+  margin-left: -30px;
+  margin-right: -30px;
 }
 
 #logo img{
   margin: 0 auto;
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
 }
 
 #owners{
