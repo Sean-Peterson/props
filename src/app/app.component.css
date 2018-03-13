@@ -28,6 +28,10 @@ a{
   font-size: 1.5em;
 }
 
+#small{
+
+}
+
 #total{
   min-width: 95vw;
   min-height: 98vh;
@@ -37,10 +41,28 @@ a{
 
 @media only screen
   and (min-device-width: 360px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-    .nav a{
-      margin-right: 1em;
+  and (max-device-width: 374px){
+
+    #navMenu{
+      margin-right: 17%;
+    }
+
+}
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 411px){
+
+    #navMenu{
+      margin-right: 22%;
+    }
+
+}
+@media only screen
+  and (min-device-width: 412px)
+  and (max-device-width: 500px){
+
+    #navMenu{
+      margin-right: 29%;
     }
 
 }
