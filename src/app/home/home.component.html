@@ -12,9 +12,9 @@
     </div>
     <h4 class="words beerDescription">{{beerDescription}}</h4>
     <div class="row">
-      <img class="col-sm-3  beer" (click)="insertText('kings')" src="/../../assets/images/4kings.png" alt="Four Kings">
-      <img class="col-sm-3  beer" (click)="insertText('porter')" src="/../../assets/images/prop-oil-porter.png" alt="Prop Oil Porter">
       <img class="col-sm-3  beer" (click)="insertText('luckey')" src="/../../assets/images/luckeyO.png" alt="Luckey O'Neill">
+      <img class="col-sm-3  beer" id="smallHide" (click)="insertText('kings')" src="/../../assets/images/4kings.png" alt="Four Kings">
+      <img class="col-sm-3  beer" (click)="insertText('porter')" src="/../../assets/images/prop-oil-porter.png" alt="Prop Oil Porter">
     </div>
   </div>
   <br>
@@ -54,7 +54,7 @@
       <img class="gMaps col-sm-12" src="/../../assets/images/grill.png" alt="">
     </div>
     <div class="col-sm-6" id="note">
-      <span>Note: We don't serve food at the taproom, but you can bring food in. Also, feel free to bring your dog in with you for a beer!</span>
+      <span>Note: We don't serve food at the taproom, but you can bring food in. Also, the taproom is dog friendly!</span>
     </div>
   </div>
 

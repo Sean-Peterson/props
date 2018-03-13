@@ -101,6 +101,10 @@
       margin-top: 2vh;
     }
 
+    #smallHide{
+      display: none;
+    }
+
     #veteran{
       margin-top: 5vh;
       margin-bottom: 5vh;
