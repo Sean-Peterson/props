@@ -12,6 +12,15 @@ p{
   padding-top: 5vh;
 }
 
+.pic{
+  max-height: 450px;
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2vh;
+
+}
+
 .words{
   color: white;
 }
