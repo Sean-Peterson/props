@@ -13,16 +13,18 @@ p{
 }
 
 .pic{
-  max-height: 250px;
+  max-height: 275px;
   max-width: 350px;
   margin: 0 auto;
-  text-align: center;
-  margin-bottom: 2vh;
-
+  padding: 0px 0px 20px 0px;
 }
 
 .words{
   color: white;
+}
+
+#top{
+  padding-top: 15vh;
 }
 
 #owners{
