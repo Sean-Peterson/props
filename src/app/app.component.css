@@ -15,18 +15,24 @@ a{
 .container{
   background-color: rgb(32,30,30);
   min-height: 98vh;
-  /* font-family: copperplate gothic; */
+  position: relative;
 }
 
 .nav{
   padding-top: 3vh;
+  text-align: right;
+  float: right;
+  position: absolute;
+  right: 0px;
 }
 
 .nav a{
-  margin: 0 auto;
+  margin-left: .5em;
+  margin-right: .5em;
+  text-align: right;
   display: inline-block;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 #foot{
@@ -36,8 +42,13 @@ a{
   padding-bottom: 2vh;
 }
 
-#small{
-
+#navImage{
+  height: 8em;
+  width: 8em;
+  float: left;
+  position: absolute;
+  left: 4px;
+  top: 4px;
 }
 
 #total{
