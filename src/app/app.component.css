@@ -15,6 +15,7 @@ a{
 .container{
   background-color: rgb(32,30,30);
   min-height: 98vh;
+  /* font-family: copperplate gothic; */
 }
 
 .nav{
@@ -29,6 +30,7 @@ a{
 }
 
 #foot{
+  font-family: copperplate gothic;
   color: white;
   text-align: center;
   padding-bottom: 2vh;
