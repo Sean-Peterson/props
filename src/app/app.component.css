@@ -28,6 +28,12 @@ a{
   font-size: 1.5em;
 }
 
+#foot{
+  color: white;
+  text-align: center;
+  padding-bottom: 2vh;
+}
+
 #small{
 
 }
