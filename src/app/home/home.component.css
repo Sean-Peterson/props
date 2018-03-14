@@ -60,7 +60,9 @@
 }
 
 #visit{
-  padding-bottom: 22vh;
+  padding-bottom: 15vh;
+  margin-left: -30px;
+  margin-right: -30px;
 }
 
 #visit h1{
