@@ -58,6 +58,24 @@
   width: 100%;
 }
 
+#mapLeft{
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  width: 50%;
+  height: 50%;
+}
+
+#mapRight{
+  display: block;
+  position: absolute;
+  top: 40%;
+  right: 0%;
+  width: 50%;
+  height: 50%;
+}
+
 #owners{
   max-width: 100%;
 }
@@ -67,6 +85,7 @@
 }
 
 #visit{
+  position: relative;
   margin-left: -30px;
   margin-right: -30px;
 }
