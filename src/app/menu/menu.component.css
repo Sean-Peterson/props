@@ -12,6 +12,10 @@
   font-weight: bold;
 }
 
+.menu{
+  padding-top: 8vh;
+}
+
 .price{
   float: right;
 }

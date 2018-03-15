@@ -37,10 +37,15 @@ a{
 
 #foot{
   font-family: copperplate gothic;
-  color: white;
   text-align: center;
-  padding-top: 5vh;
+  padding-top: 12vh;
   padding-bottom: 2vh;
+  color: white;
+}
+
+#foot a{
+  color: #c0c5ce;
+  text-decoration: underline;
 }
 
 #navImage{
@@ -66,7 +71,7 @@ a{
     .nav{
       position: absolute;
       right: 0px;
-      width: 30%;
+      width: 40%;
     }
     .nav a {
       padding-bottom: 2vh;
@@ -76,6 +81,10 @@ a{
     #navImage{
       height: 6em;
       width: 6em;
+    }
+
+    #foot{
+      padding-top: 10vh;
     }
 }
 /* @media only screen
