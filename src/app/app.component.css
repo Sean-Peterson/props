@@ -61,14 +61,24 @@ a{
 
 @media only screen
   and (min-device-width: 360px)
-  and (max-device-width: 374px){
+  and (max-device-width: 500px){
 
-    #navMenu{
-      margin-right: 17%;
+    .nav{
+      position: absolute;
+      right: 0px;
+      width: 30%;
+    }
+    .nav a {
+      padding-bottom: 2vh;
+      font-size: 1em;
     }
 
+    #navImage{
+      height: 6em;
+      width: 6em;
+    }
 }
-@media only screen
+/* @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 411px){
 
@@ -85,4 +95,4 @@ a{
       margin-right: 29%;
     }
 
-}
+} */
