@@ -23,11 +23,15 @@ p{
   color: white;
 }
 
+#owners{
+  max-height: 60%;
+  max-width: 90%;
+}
+
 #top{
   padding-top: 22vh;
 }
 
-#owners{
-  max-height: 60%;
-  max-width: 90%;
+#paragraph{
+  font-size: 1.2em;
 }
