@@ -2,6 +2,10 @@
   font-family: military;
 }
 
+.ammo small{
+  font-size: .4em;
+}
+
 .beer{
   height: 45%;
   width: 45%;
@@ -20,6 +24,12 @@
 
 }
 
+.ontap{
+  color: white;
+  padding-top: 10vh;
+  text-align: center;
+}
+
 .words{
   color: white;
   text-align: center;
@@ -30,9 +40,9 @@
   padding-bottom: 2vh;
 }
 
-#ontap{
-  color: white;
-  padding-top: 10vh;
+
+#seasonal{
+  padding-top: 5vh;
 }
 
 #series{
