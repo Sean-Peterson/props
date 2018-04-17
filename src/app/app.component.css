@@ -35,6 +35,14 @@ a{
   font-size: 1.3em;
 }
 
+.show{
+opacity: 1 !important;
+}
+.step{
+opacity: 0;
+transition: .5s ease-in-out all;
+}
+
 #foot{
   font-family: copperplate gothic;
   text-align: center;
@@ -55,6 +63,12 @@ a{
   position: absolute;
   left: 4px;
   top: 4px;
+}
+
+#soon{
+  text-align: center;
+  background-color: slategray;
+  padding-bottom: 1.5px;
 }
 
 #total{
