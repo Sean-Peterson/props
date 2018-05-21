@@ -12,5 +12,5 @@
 
 <h1 class="ammo ontap">Beers On Tap</h1>
 <div id="beerMenu">
-    <h2 class="ammo words" *ngFor="let onTap of onTap | async">{{onTap.name}} - <span>{{onTap.description}}</span></h2>
+    <h2 class="beerName ammo" *ngFor="let onTap of onTap | async">{{onTap.name}} - <span class="beerDescription">{{onTap.description}}</span></h2>
 </div>
