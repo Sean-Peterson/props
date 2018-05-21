@@ -6,10 +6,6 @@ a{
   font-family: military;
 }
 
-.beers{
-  padding-top: 10vh;
-  padding-bottom: 22vh;
-}
 
 .beer{
   cursor: pointer;
@@ -36,16 +32,29 @@ a{
 }
 
 #about{
-  padding-bottom: 18vh;
-  padding-top: 18vh;
+  padding-bottom: 6vh;
+  padding-top: 9vh;
   margin-left: -15px;
   margin-right: -15px;
+  background-color: rgb(27,25,25);
+}
+
+#about h3{
+  margin-top: 3vh;
 }
 
 #about img{
   width: 100%;
   height: 85%;
   padding-bottom: 3vh;
+}
+
+#beers{
+  padding-bottom: 5vh;
+}
+
+#beers h3{
+  padding-top: 4vh;
 }
 
 #logo{
@@ -99,6 +108,7 @@ a{
 }
 
 #visit{
+  padding-top: 9vh;
   position: relative;
   margin-left: -15px;
   margin-right: -15px;
