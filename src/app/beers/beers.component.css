@@ -40,6 +40,11 @@
   padding-bottom: 2vh;
 }
 
+#beerMenu h2 span{
+  font-size: .5em;
+  font-family: sans-serif;
+
+}
 
 #seasonal{
   padding-top: 5vh;
