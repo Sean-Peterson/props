@@ -18,6 +18,9 @@ import { CultureComponent } from './culture/culture.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { PubComponent } from './pub/pub.component';
+import { TaproomComponent } from './taproom/taproom.component';
+import { AlehouseComponent } from './alehouse/alehouse.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -38,7 +41,10 @@ export const firebaseConfig = {
     FourKingsComponent,
     PorterComponent,
     LuckeyComponent,
-    CultureComponent
+    CultureComponent,
+    PubComponent,
+    TaproomComponent,
+    AlehouseComponent
   ],
   imports: [
     BrowserModule,
