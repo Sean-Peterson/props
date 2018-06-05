@@ -16,6 +16,7 @@ a{
   background-color: rgb(32,30,30);
   min-height: 98vh;
   position: relative;
+  color: white;
 }
 
 .nav{
