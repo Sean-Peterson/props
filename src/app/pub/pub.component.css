@@ -6,6 +6,17 @@
   max-width: 100%;
 }
 
+.hours{
+  margin-top: 2vh;
+}
+
+.hours a{
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #c0c5ce;
+  text-decoration: underline;
+}
+
 .picCollage .secondrow{
   margin-top: 2vh;
 }

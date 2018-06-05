@@ -57,6 +57,11 @@ transition: .5s ease-in-out all;
   text-decoration: underline;
 }
 
+#foot img{
+  width: 30px;
+  height: 30px;
+}
+
 #navImage{
   height: 8em;
   width: 8em;
