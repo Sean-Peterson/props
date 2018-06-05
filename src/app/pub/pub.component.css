@@ -2,8 +2,16 @@
   font-family: military;
 }
 
+.collagePic{
+  max-width: 100%;
+}
+
+.picCollage .secondrow{
+  margin-top: 2vh;
+}
+
 .reviews{
-  margin: 2vh 10vw 10vw 2vh;
+  margin: 8vh 10vw 10vw 2vh;
 }
 
 .reviews h4{
