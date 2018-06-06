@@ -14,6 +14,15 @@ export class OnTapService {
     return this.onTap;
   }
 
+  // getPubBeers(){
+  //   var onTap = this.onTap;
+  //   onTap.forEach(function(){
+  //     if (onTap.pub == false){
+  //       console.log(onTap.name);
+  //     }
+  //   });
+  // }
+
   // getDeckById(deckId: string) {
   //   return this.angularFire.database.object('decks/' + deckId);
   // }

@@ -2,16 +2,25 @@
     "name": " Blonde Bomber",
     "description": "A live  album by the English progressive rock band originally released in 1995, on the label EMI in the United Kingdom.",
     "ibu": "55",
-    "abv": "7"
+    "abv": "7",
+    "taproom": true,
+    "pub": false,
+    "alehouse": false
     }, {
     "name": "Dos Pilotos",
     "description": "Her highest-selling and most acclaimed album, released in 1996.",
     "ibu": "55",
-    "abv": "7"
+    "abv": "7",
+    "taproom": false,
+    "pub": true,
+    "alehouse": false
       }, {
     "name": "Flying Coffin",
     "description": "Second studio album by the English-American band, released in 1967.",
     "ibu": "55",
-    "abv": "7"
+    "abv": "7",
+    "taproom": false,
+    "pub": false,
+    "alehouse": true
   }]
 }
