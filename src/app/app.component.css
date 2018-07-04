@@ -43,6 +43,11 @@ opacity: 0;
 transition: .5s ease-in-out all;
 }
 
+#fb{
+  max-width: 3em;
+  max-height: 3em;
+}
+
 #foot{
   font-family: copperplate gothic;
   text-align: center;
@@ -51,9 +56,9 @@ transition: .5s ease-in-out all;
   color: white;
 }
 
-#foot a{
-  color: #c0c5ce;
-  text-decoration: underline;
+#ig{
+  max-width: 2em;
+  max-height: 2em;
 }
 
 #navImage{
