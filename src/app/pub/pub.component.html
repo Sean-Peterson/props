@@ -42,6 +42,12 @@
       <span>(850) 586-7117 ext. 1</span>
   </div>
 </div>
+
+<h1 class="ammo ontap">Beers On Tap</h1>
+<div id="beerMenu">
+    <h2 class="beerName ammo" *ngFor="let onTap of onTap | async"> <span *ngIf='onTap.pub === true; elseBlock'> {{onTap.title}} -</span> <span *ngIf='onTap.pub === true; elseBlock' class="beerDescription">{{onTap.description}}</span></h2>
+</div>
+
 <div class="reviews">
   <h1>Helpful Reviews</h1>
   <h4>Absolute Awesome Dining Experience</h4>
