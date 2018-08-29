@@ -1,0 +1,80 @@
+.ammo{
+  font-family: military;
+}
+
+.collagePic{
+  max-width: 100%;
+}
+
+.hours{
+  margin-top: 2vh;
+}
+
+.hours a{
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #c0c5ce;
+  text-decoration: underline;
+}
+
+.picCollage .secondrow{
+  margin-top: 2vh;
+}
+
+.reviews{
+  margin: 8vh 10vw 10vw 2vh;
+}
+
+.reviews h4{
+  margin-top: 2vh;
+}
+
+.revlogos{
+  height: 50px;
+  width: 50px;
+}
+
+#name{
+  text-align: center;
+  padding-top: 15vh;
+  font-size: 5em;
+}
+
+#restImage{
+  width: 80%;
+  height: 80%;
+  position: relative;
+}
+
+#side{
+  text-align: center;
+  width: 18%;
+  float: right;
+  position: relative;
+}
+
+#side img{
+  margin-top: 10px;
+}
+
+
+@media only screen
+  and (min-device-width: 360px)
+  and (max-device-width: 812px){
+    #restImage{
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    #name{
+      padding-top: 20vh;
+    }
+
+    #side{
+      text-align: center;
+      width: 100%;
+      float: none;
+      position: relative;
+    }
+}
