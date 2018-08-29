@@ -13,7 +13,7 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { BeerlistComponent } from './beerlist/beerlist.component';
-import { Beer } from './models/beer.model';
+import { OnTap } from './models/onTap.model';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,

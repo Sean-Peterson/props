@@ -14,6 +14,10 @@ export class OnTapService {
     return this.onTap;
   }
 
+  addOnTap(newOnTap: OnTap) {
+    this.onTap.push(newOnTap);
+  }
+
   // getPubBeers(){
   //   var onTap = this.onTap;
   //   onTap.forEach(function(){
