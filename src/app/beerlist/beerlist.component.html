@@ -1,0 +1,39 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add a New Beer to the list of Props Beers</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Title:</label>
+        <br>
+        <input #newTitle>
+      </div>
+
+      <div>
+        <label>Style:</label>
+        <br>
+        <input #newStyle>
+      </div>
+
+      <div>
+        <label>IBU:</label>
+        <br>
+        <input #newIbu>
+      </div>
+
+      <div>
+        <label>ABV:</label>
+        <br>
+        <input #newABV>
+      </div>
+
+      <div>
+        <label>Description:</label>
+        <br>
+        <textarea #newDescription></textarea>
+      </div>
+      <button (click)="submitForm(newTitle.value, newStyle.value, newIbu.value, newABV.value, newDescription.value); newTitle.value=''; newStyle.value=''; newIbu.value=''; newABV.value=''; newDescription.value='';">Add</button>
+    </div>
+  </div>
+</div>
