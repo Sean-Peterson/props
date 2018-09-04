@@ -11,11 +11,11 @@ import { OnTapService } from './../onTap.service';
 export class AlehouseComponent implements OnInit {
 
   onTap;
-  constructor(private OnTapService: OnTapService) { }
+  constructor(private onTapService: OnTapService) { }
 
   ngOnInit() {
     window.scrollTo(0, 0);
-    this.onTap = this.OnTapService.getOnTap();
+    this.onTap = this.onTapService.getOnTap();
   }
 
 }

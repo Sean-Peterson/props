@@ -18,25 +18,22 @@ export class OnTapService {
     this.onTap.push(newOnTap);
   }
 
-  // getPubBeers(){
-  //   var onTap = this.onTap;
-  //   onTap.forEach(function(){
-  //     if (onTap.pub == false){
-  //       console.log(onTap.name);
-  //     }
-  //   });
-  // }
+  getOnTapById(OnTapId: string) {
+    return this.db.object('/onTap/' + OnTapId);
+  }
 
-  // getDeckById(deckId: string) {
-  //   return this.angularFire.database.object('decks/' + deckId);
-  // }
-  //
-  // saveDeck(deck: Deck) {
-  //   let newRef = this.decks.push(deck);
-  //   return newRef.key;
-  // }
-  //
-  // deleteDeck(deckId: string) {
-  //   this.getDeckById(deckId).remove();
-  // }
+  updateBeer(localUpdatedBeer){
+     var beerEntryInFirebase = this.getOnTapById(localUpdatedBeer.$key);
+     beerEntryInFirebase.update({
+       title: localUpdatedBeer.title,
+       style: localUpdatedBeer.style,
+       ibu: localUpdatedBeer.ibu,
+       alcoholContent: localUpdatedBeer.abv,
+       description: localUpdatedBeer.description,
+       pub: localUpdatedBeer.pub,
+       aleHouse: localUpdatedBeer.aleHouse,
+       tapRoom: localUpdatedBeer.tapRoom
+     });
+     }
+
 }

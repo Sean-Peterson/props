@@ -17,6 +17,7 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { OnTap } from './models/onTap.model';
+import { FormsModule } from '@angular/forms';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -39,6 +40,7 @@ export const firebaseConfig = {
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpModule,
     routing,
     AlertModule.forRoot(),

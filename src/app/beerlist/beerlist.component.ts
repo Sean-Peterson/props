@@ -10,15 +10,22 @@ import { OnTapService } from './../onTap.service';
 })
 export class BeerlistComponent implements OnInit {
 
+  onTap;
   constructor(private onTapService: OnTapService) { }
 
+
   ngOnInit() {
+    this.onTap = this.onTapService.getOnTap();
   }
 
   submitForm(title: string, style: string, ibu: number, abv: number, description: string){
     var newOnTap: OnTap = new OnTap(title, style, ibu, abv, description);
     console.log(newOnTap);
     this.onTapService.addOnTap(newOnTap);
+  }
+
+  editButtonClicked(onTap) {
+    this.onTapService.updateBeer(onTap);
   }
 
 }
