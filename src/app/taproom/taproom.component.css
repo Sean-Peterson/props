@@ -2,6 +2,11 @@
   font-family: military;
 }
 
+.beerDescription{
+  font-size: .75em;
+  font-family: sans-serif;
+}
+
 .collagePic{
   max-width: 100%;
 }
@@ -15,6 +20,10 @@
   font-size: 1.2em;
   color: #c0c5ce;
   text-decoration: underline;
+}
+
+.ontap{
+  margin: 8vh 10vw 0vw 2vh
 }
 
 .picCollage .secondrow{

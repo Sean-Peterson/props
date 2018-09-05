@@ -43,9 +43,12 @@
   </div>
 </div>
 
-<h1 class="ammo ontap">Beers On Tap</h1>
-<div id="beerMenu">
-    <h2 class="beerName ammo" *ngFor="let onTap of onTap | async"> <span *ngIf='onTap.pub === true; elseBlock'> {{onTap.title}} -</span> <span *ngIf='onTap.pub === true; elseBlock' class="beerDescription">{{onTap.description}}</span></h2>
+<div class="ontap">
+  <h1 class="ammo">Current List of Beers On Tap</h1>
+  <hr>
+  <div id="beerMenu" *ngFor="let onTap of onTap | async">
+    <h2 class="ammo" *ngIf='onTap.pub === true; elseBlock'> <span class="beerName"> {{onTap.title}} -</span> <span class="beerDescription">{{onTap.description}}</span></h2>
+  </div>
 </div>
 
 <div class="reviews">
