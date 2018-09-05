@@ -5,87 +5,91 @@
   <div class="panel-body">
     <div>
       <div>
-        <label>Title:</label>
+        <label class="labels">Title:</label>
         <br>
         <input #newTitle>
       </div>
 
       <div>
-        <label>Style:</label>
+        <label class="labels">Style:</label>
         <br>
         <input #newStyle>
       </div>
 
       <div>
-        <label>IBU:</label>
+        <label class="labels">IBU:</label>
         <br>
         <input #newIbu>
       </div>
 
       <div>
-        <label>ABV:</label>
+        <label class="labels">ABV:</label>
         <br>
         <input #newABV>
       </div>
 
       <div>
-        <label>Description:</label>
+        <label class="labels">Description:</label>
         <br>
-        <textarea #newDescription></textarea>
+        <textarea rows="10" cols="50" #newDescription></textarea>
       </div>
-      <button (click)="submitForm(newTitle.value, newStyle.value, newIbu.value, newABV.value, newDescription.value); newTitle.value=''; newStyle.value=''; newIbu.value=''; newABV.value=''; newDescription.value='';">Add</button>
+      <button class="btn-success" (click)="submitForm(newTitle.value, newStyle.value, newIbu.value, newABV.value, newDescription.value); newTitle.value=''; newStyle.value=''; newIbu.value=''; newABV.value=''; newDescription.value='';">Add</button>
     </div>
   </div>
 
 <br>
+<br>
 
   <div class="all-beer">
     <div class="beerName ammo" *ngFor="let onTap of onTap | async">
-      <p><span class="onTap-title">Title: {{onTap.title}}</span></p>
-      <p>Description: {{onTap.description}}</p>
-      <p>Alcohol Percentage: {{onTap.abv}}%</p>
-      <p>IBU: {{onTap.ibu}}</p>
-      <p>On Tap at Pub: {{onTap.pub}}</p>
-      <p>On Tap at Ale House: {{onTap.aleHouse}}</p>
-      <p>On Tap at Tap Room: {{onTap.tapRoom}}</p>
+      <h3>Title: {{onTap.title}}</h3>
+      <h3>Description: {{onTap.description}}</h3>
+      <h3>Alcohol Percentage: {{onTap.abv}}%</h3>
+      <h3>IBU: {{onTap.ibu}}</h3>
+      <h3>On Tap at Pub: {{onTap.pub}}</h3>
+      <h3>On Tap at Ale House: {{onTap.aleHouse}}</h3>
+      <h3>On Tap at Tap Room: {{onTap.tapRoom}}</h3>
       <button class="btn btn-warning" (click)="editForm.hidden =!editForm.hidden">Edit Beer</button>
       <button class="btn btn-danger" (click)="beginDeletingBeer(onTap)">Delete Beer</button>
-      <br><br>
+      <br>
+      <br>
       <div #editForm [hidden]=editForm>
         <div class="form-group">
-          <label for="onTap-title">Title:</label>
+          <label class="labels" for="onTap-title">Title:</label>
           <input [(ngModel)]="onTap.title">
         </div>
         <div class="form-group">
-          <label for="onTap-style">Style:</label>
+          <label class="labels" for="onTap-style">Style:</label>
           <input [(ngModel)]="onTap.style">
         </div>
         <div class="form-group">
-          <label for="onTap-ibu">IBU:</label>
+          <label class="labels" for="onTap-ibu">IBU:</label>
           <input [(ngModel)]="onTap.ibu">
         </div>
         <div class="form-group">
-          <label for="onTap-abv">ABV:</label>
+          <label class="labels" for="onTap-abv">ABV:</label>
           <input [(ngModel)]="onTap.abv">
         </div>
         <div class="form-group">
-          <label for="onTap-description">Description:</label>
+          <label class="labels" for="onTap-description">Description:</label>
           <input class="form-control" [(ngModel)]="onTap.description">
         </div>
         <div class="form-group">
-          <label for="onTap-pub">On Tap at the Pub?:</label>
-          <input type="checkbox" [(ngModel)]="onTap.pub" [value]="true">
+          <label class="labels" for="onTap-pub">On Tap at the Pub?:</label>
+          <input class="checkbox" type="checkbox" [(ngModel)]="onTap.pub" [value]="true">
         </div>
         <div class="form-group">
-          <label for="onTap-aleHouse">On Tap at the Ale House?:</label>
-          <input type="checkbox" [(ngModel)]="onTap.aleHouse" [value]="true">
+          <label class="labels" for="onTap-aleHouse">On Tap at the Ale House?:</label>
+          <input class="checkbox" type="checkbox" [(ngModel)]="onTap.aleHouse" [value]="true">
         </div>
         <div class="form-group">
-          <label for="onTap-tapRoom">On Tap at the Tap Room:</label>
-          <input type="checkbox" [(ngModel)]="onTap.tapRoom" [value]="true">
+          <label class="labels" for="onTap-tapRoom">On Tap at the Tap Room:</label>
+          <input class="checkbox" type="checkbox" [(ngModel)]="onTap.tapRoom" [value]="true">
         </div>
         <button class="btn btn-success" (click)="editButtonClicked(onTap)">Submit!</button>
       </div>
+      <br>
+      <br>
     </div>
   </div>
 </div>

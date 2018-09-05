@@ -19,9 +19,12 @@ export class BeerlistComponent implements OnInit {
   }
 
   submitForm(title: string, style: string, ibu: number, abv: number, description: string){
-    var newOnTap: OnTap = new OnTap(title, style, ibu, abv, description);
-    console.log(newOnTap);
-    this.onTapService.addOnTap(newOnTap);
+    if(title !== "" && style !== "" && ibu >= 0 && abv >= 0 && description !== ""){
+      var newOnTap: OnTap = new OnTap(title, style, ibu, abv, description);
+      this.onTapService.addOnTap(newOnTap);
+    }else{
+      confirm("You must enter info into all of the fields. Only use numbers for ibu and abv. Don't include the % sign.");
+    }
   }
 
   editButtonClicked(onTap) {
