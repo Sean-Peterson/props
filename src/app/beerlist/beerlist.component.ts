@@ -1,21 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 import { OnTap } from './../models/onTap.model';
 import { OnTapService } from './../onTap.service';
+import { Auth } from './../models/auth.model';
+import { AuthService } from './../auth.service';
 
 @Component({
   selector: 'app-beerlist',
   templateUrl: './beerlist.component.html',
   styleUrls: ['./beerlist.component.css'],
-  providers: [OnTapService]
+  providers: [OnTapService, AuthService]
 })
 export class BeerlistComponent implements OnInit {
 
   onTap;
-  constructor(private onTapService: OnTapService) { }
-
+  auth;
+  users;
+  public authenticated: boolean;
+  constructor(private onTapService: OnTapService, private authService: AuthService) { }
 
   ngOnInit() {
     this.onTap = this.onTapService.getOnTap();
+    this.auth = this.authService.getAuth();
+    this.authenticated = false;
   }
 
   submitForm(title: string, style: string, ibu: number, abv: number, description: string){
@@ -36,4 +42,15 @@ export class BeerlistComponent implements OnInit {
       this.onTapService.deleteBeer(onTap);
     }
   }
+
+  authenticate(userName: string, password: string){
+    var savedUserName: string = "Props";
+    var savedPassword: string = "Props";
+    if(userName == savedUserName && password == savedPassword){
+      this.authenticated = true;
+    }else{
+      confirm("that is the wrong username or password");
+    }
+  }
+
 }

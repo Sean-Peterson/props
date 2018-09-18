@@ -17,7 +17,9 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { OnTap } from './models/onTap.model';
+import { Auth } from './models/auth.model';
 import { FormsModule } from '@angular/forms';
+import { AuthComponent } from './auth/auth.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -36,7 +38,8 @@ export const firebaseConfig = {
     PubComponent,
     TaproomComponent,
     AlehouseComponent,
-    BeerlistComponent
+    BeerlistComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
