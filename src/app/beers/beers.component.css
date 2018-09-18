@@ -43,7 +43,15 @@
 #beerMenu h2 span{
   font-size: .5em;
   font-family: sans-serif;
+}
 
+#route{
+  color: inherit;
+  cursor: default;
+}
+
+#route:hover{
+  text-decoration: none;
 }
 
 #seasonal{

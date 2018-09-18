@@ -1,26 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { OnTap } from './../models/onTap.model';
 import { OnTapService } from './../onTap.service';
-import { Auth } from './../models/auth.model';
-import { AuthService } from './../auth.service';
 
 @Component({
   selector: 'app-beerlist',
   templateUrl: './beerlist.component.html',
   styleUrls: ['./beerlist.component.css'],
-  providers: [OnTapService, AuthService]
+  providers: [OnTapService]
 })
 export class BeerlistComponent implements OnInit {
 
   onTap;
-  auth;
   users;
   public authenticated: boolean;
-  constructor(private onTapService: OnTapService, private authService: AuthService) { }
+  constructor(private onTapService: OnTapService) { }
 
   ngOnInit() {
     this.onTap = this.onTapService.getOnTap();
-    this.auth = this.authService.getAuth();
     this.authenticated = false;
   }
 

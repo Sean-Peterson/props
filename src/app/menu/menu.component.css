@@ -31,3 +31,12 @@
 .words{
   color: white;
 }
+
+#route{
+  color: inherit;
+  cursor: default;
+}
+
+#route:hover{
+  text-decoration: none;
+}

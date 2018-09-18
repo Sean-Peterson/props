@@ -9,7 +9,6 @@ import { BeerlistComponent } from './beerlist/beerlist.component';
 import { PubComponent } from './pub/pub.component';
 import { AlehouseComponent } from './alehouse/alehouse.component';
 import { TaproomComponent } from './taproom/taproom.component';
-import { AuthComponent } from './auth/auth.component';
 
 const appRoutes: Routes = [
   {
@@ -43,10 +42,6 @@ const appRoutes: Routes = [
   {
     path: 'taproom',
     component: TaproomComponent
-  },
-  {
-    path: 'auth',
-    component: AuthComponent
   }
 ];
 

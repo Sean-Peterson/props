@@ -10,7 +10,7 @@
 
 <h4 class="words">Our Distributed Series can be found in bars, package shops, and grocery stores anywhere between Mobile, AL to Appalachicola, FL and all the way up to Huntsville, AL.</h4>
 
-<h1 class="ammo ontap">Beers On Tap</h1>
+<h1 class="ammo ontap"><a id="route" routerLink="/beerlist">Beers On Tap</a></h1>
 <div id="beerMenu">
     <h2 class="beerName ammo" *ngFor="let onTap of onTap | async"> <span *ngIf='onTap.pub === true; elseBlock'> {{onTap.name}} -</span> <span *ngIf='onTap.pub === true; elseBlock' class="beerDescription">{{onTap.description}}</span></h2>
 </div>
