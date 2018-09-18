@@ -20,6 +20,8 @@ export class MenulistComponent implements OnInit {
   }
 
   submitForm(title: string, price: number, description: string, pairing: string, regularMenu: string, lunchMenu: string){
+    regularMenu = regularMenu.toLowerCase();
+    lunchMenu = lunchMenu.toLowerCase();
     var newRegularMenu: boolean;
     var newLunchMenu: boolean;
     if(regularMenu !== "true"){
@@ -32,7 +34,6 @@ export class MenulistComponent implements OnInit {
     }else{
       newLunchMenu = true
     }
-    console.log(lunchMenu);
     if(title !== "" && price >= 0 && description !== "" && pairing !== ''){
       var newItem: Item = new Item(title, price, description, pairing, newRegularMenu, newLunchMenu);
       this.itemService.addItem(newItem);

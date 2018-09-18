@@ -55,14 +55,14 @@
         <div>
           <label class="labels">Regular Menu:</label>
           <br>
-          <p>Answer True or False</p>
+          <p>Answer true or false</p>
           <input #newRegular>
         </div>
 
         <div>
           <label class="labels">Lunch Menu:</label>
           <br>
-          <p>Answer True or False</p>
+          <p>Answer true or false</p>
           <input #newLunch>
         </div>
         <br>
@@ -108,7 +108,7 @@
             <input class="checkbox" type="checkbox" [(ngModel)]="item.regularMenu" [value]="true">
           </div>
           <div class="form-group">
-            <label class="labels" for="item-aleHouse">On the Lunc Menu?:</label>
+            <label class="labels" for="item-aleHouse">On the Lunch Menu?:</label>
             <input class="checkbox" type="checkbox" [(ngModel)]="item.lunchMenu" [value]="true">
           </div>
           <button class="btn btn-success" (click)="editButtonClicked(item)">Submit!</button>
