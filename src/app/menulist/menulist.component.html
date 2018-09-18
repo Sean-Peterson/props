@@ -1,0 +1,121 @@
+<div *ngIf="!authenticated">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Sign In</h3>
+    </div>
+    <div class="panel-body">
+      <div>
+        <div>
+          <label class="labels">User Name:</label>
+          <br>
+          <input #checkUserName>
+        </div>
+
+        <div>
+          <label class="labels">Password:</label>
+          <br>
+          <input #checkPassword>
+        </div>
+        <button class="btn-success" (click)="authenticate(checkUserName.value, checkPassword.value); checkUserName.value=''; checkPassword.value='';">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="authenticated">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Add a New Item to the Menu</h3>
+    </div>
+    <div class="panel-body">
+      <div>
+        <div>
+          <label class="labels">Title:</label>
+          <br>
+          <input #newTitle>
+        </div>
+
+        <div>
+          <label class="labels">Price:</label>
+          <br>
+          <input #newPrice>
+        </div>
+
+        <div>
+          <label class="labels">Description:</label>
+          <br>
+          <textarea rows="10" cols="50" #newDescription></textarea>
+        </div>
+
+        <div>
+          <label class="labels">Pairing:</label>
+          <br>
+          <input #newPairing>
+        </div>
+
+        <div>
+          <label class="labels">Regular Menu:</label>
+          <br>
+          <p>Answer True or False</p>
+          <input #newRegular>
+        </div>
+
+        <div>
+          <label class="labels">Lunch Menu:</label>
+          <br>
+          <p>Answer True or False</p>
+          <input #newLunch>
+        </div>
+        <br>
+
+        <button class="btn-success" (click)="submitForm(newTitle.value, newPrice.value, newDescription.value, newPairing.value, newRegular.value, newLunch.value); newTitle.value=''; newPrice.value=''; newDescription.value=''; newPairing.value=''; newRegular.value=''; newLunch.value='';">Add</button>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="all-beer">
+      <div class="beerName ammo" *ngFor="let item of item | async">
+        <h3>Title: {{item.title}}</h3>
+        <h3>Price: ${{item.price}}</h3>
+        <h3>Description: {{item.description}}</h3>
+        <h3>Pairing: {{item.pairing}}</h3>
+        <h3>On Regular Menu: {{item.regularMenu}}</h3>
+        <h3>On Lunch Menu: {{item.lunchMenu}}</h3>
+        <button class="btn btn-warning" (click)="editForm.hidden =!editForm.hidden">Edit Item</button>
+        <button class="btn btn-danger" (click)="beginDeletingItem(item)">Delete Item</button>
+        <br>
+        <br>
+        <div #editForm [hidden]=editForm>
+          <div class="form-group">
+            <label class="labels" for="item-title">Title:</label>
+            <input [(ngModel)]="item.title">
+          </div>
+          <div class="form-group">
+            <label class="labels" for="item-style">Price:</label>
+            <input [(ngModel)]="item.style">
+          </div>
+          <div class="form-group">
+            <label class="labels" for="item-description">Description:</label>
+            <input class="form-control" [(ngModel)]="item.description">
+          </div>
+          <div class="form-group">
+            <label class="labels" for="item-ibu">Pairing:</label>
+            <input [(ngModel)]="item.ibu">
+          </div>
+          <div class="form-group">
+            <label class="labels" for="item-pub">On the Regular Menu?:</label>
+            <input class="checkbox" type="checkbox" [(ngModel)]="item.regularMenu" [value]="true">
+          </div>
+          <div class="form-group">
+            <label class="labels" for="item-aleHouse">On the Lunc Menu?:</label>
+            <input class="checkbox" type="checkbox" [(ngModel)]="item.lunchMenu" [value]="true">
+          </div>
+          <button class="btn btn-success" (click)="editButtonClicked(item)">Submit!</button>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>

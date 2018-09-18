@@ -11,7 +11,6 @@ import { OnTapService } from './../onTap.service';
 export class BeerlistComponent implements OnInit {
 
   onTap;
-  users;
   public authenticated: boolean;
   constructor(private onTapService: OnTapService) { }
 

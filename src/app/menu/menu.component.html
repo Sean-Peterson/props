@@ -1,5 +1,9 @@
 <div class="menu words">
-  <h1 class="ammo centered">Props Brewery and Grill <a id="route" routerLink="/beerlist">Menu</a></h1>
+  <h1 class="ammo centered">Props Brewery and Grill <a id="route" routerLink="/menulist">Menu</a></h1>
+
+  <div id="beerMenu">
+      <h2 class="beerName ammo" *ngFor="let item of item | async"> <span *ngIf='item.regularMenu == true; elseBlock'> {{item.title}} -</span> <span *ngIf='item.regularMenu == true; elseBlock' class="beerDescription">{{item.description}}</span></h2>
+  </div>
 
   <h3 class="ammo centered">Starters</h3>
   <div class="row">
