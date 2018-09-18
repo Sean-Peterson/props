@@ -51,23 +51,9 @@
           <br>
           <input #newPairing>
         </div>
-
-        <div>
-          <label class="labels">Regular Menu:</label>
-          <br>
-          <p>Answer true or false</p>
-          <input #newRegular>
-        </div>
-
-        <div>
-          <label class="labels">Lunch Menu:</label>
-          <br>
-          <p>Answer true or false</p>
-          <input #newLunch>
-        </div>
         <br>
 
-        <button class="btn-success" (click)="submitForm(newTitle.value, newPrice.value, newDescription.value, newPairing.value, newRegular.value, newLunch.value); newTitle.value=''; newPrice.value=''; newDescription.value=''; newPairing.value=''; newRegular.value=''; newLunch.value='';">Add</button>
+        <button class="btn-success" (click)="submitForm(newTitle.value, newPrice.value, newDescription.value, newPairing.value); newTitle.value=''; newPrice.value=''; newDescription.value=''; newPairing.value='';">Add</button>
       </div>
     </div>
 
@@ -82,6 +68,12 @@
         <h3>Pairing: {{item.pairing}}</h3>
         <h3>On Regular Menu: {{item.regularMenu}}</h3>
         <h3>On Lunch Menu: {{item.lunchMenu}}</h3>
+        <h3>Starter: {{item.starter}}</h3>
+        <h3>Soup Salad: {{item.soupSalad}}</h3>
+        <h3>Sandwich Wrap: {{item.sanWrap}}</h3>
+        <h3>Entree: {{item.entree}}</h3>
+        <h3>Burger: {{item.burger}}</h3>
+        <h3>Side: {{item.side}}</h3>
         <button class="btn btn-warning" (click)="editForm.hidden =!editForm.hidden">Edit Item</button>
         <button class="btn btn-danger" (click)="beginDeletingItem(item)">Delete Item</button>
         <br>
@@ -110,6 +102,30 @@
           <div class="form-group">
             <label class="labels" for="item-aleHouse">On the Lunch Menu?:</label>
             <input class="checkbox" type="checkbox" [(ngModel)]="item.lunchMenu" [value]="true">
+          </div>
+          <div class="form-group">
+            <label class="labels" for="item-starter">Starter:</label>
+            <input class="checkbox" type="checkbox" [(ngModel)]="item.starter" [value]="true">
+          </div>
+          <div class="form-group">
+            <label class="labels" for="item-soupSalad">Soup Salad:</label>
+            <input class="checkbox" type="checkbox" [(ngModel)]="item.soupSalad" [value]="true">
+          </div>
+          <div class="form-group">
+            <label class="labels" for="item-sanWrap">Sandwich Wrap:</label>
+            <input class="checkbox" type="checkbox" [(ngModel)]="item.sanWrap" [value]="true">
+          </div>
+          <div class="form-group">
+            <label class="labels" for="item-entree">Entree:</label>
+            <input class="checkbox" type="checkbox" [(ngModel)]="item.entree" [value]="true">
+          </div>
+          <div class="form-group">
+            <label class="labels" for="item-burger">Burger:</label>
+            <input class="checkbox" type="checkbox" [(ngModel)]="item.burger" [value]="true">
+          </div>
+          <div class="form-group">
+            <label class="labels" for="item-side">Side:</label>
+            <input class="checkbox" type="checkbox" [(ngModel)]="item.side" [value]="true">
           </div>
           <button class="btn btn-success" (click)="editButtonClicked(item)">Submit!</button>
         </div>

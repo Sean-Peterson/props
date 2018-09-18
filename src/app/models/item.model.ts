@@ -1,3 +1,11 @@
 export class Item {
-  constructor(public title: string, public price: number, public description: string, public pairing: string, public regularMenu: boolean,public lunchMenu: boolean) { }
+  public regularMenu: boolean = false;
+  public lunchMenu: boolean = false;
+  public starter: boolean = false;
+  public soupSalad: boolean = false;
+  public sanWrap: boolean = false;
+  public burger: boolean = false;
+  public entree: boolean = false;
+  public side: boolean = false;
+  constructor(public title: string, public price: number, public description: string, public pairing: string) { }
 }

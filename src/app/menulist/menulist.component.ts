@@ -19,23 +19,10 @@ export class MenulistComponent implements OnInit {
     this.authenticated = true;
   }
 
-  submitForm(title: string, price: number, description: string, pairing: string, regularMenu: string, lunchMenu: string){
-    regularMenu = regularMenu.toLowerCase();
-    lunchMenu = lunchMenu.toLowerCase();
-    var newRegularMenu: boolean;
-    var newLunchMenu: boolean;
-    if(regularMenu !== "true"){
-      newRegularMenu = false;
-    }else{
-      newRegularMenu = true
-    }
-    if(lunchMenu !== "true"){
-      newLunchMenu = false;
-    }else{
-      newLunchMenu = true
-    }
+  submitForm(title: string, price: number, description: string, pairing: string){
+
     if(title !== "" && price >= 0 && description !== "" && pairing !== ''){
-      var newItem: Item = new Item(title, price, description, pairing, newRegularMenu, newLunchMenu);
+      var newItem: Item = new Item(title, price, description, pairing);
       this.itemService.addItem(newItem);
     }else{
       confirm("You must enter info into all of the fields. Price must be a number.");
