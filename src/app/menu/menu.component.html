@@ -1,12 +1,19 @@
 <div class="menu words">
   <h1 class="ammo centered">Props Brewery and Grill <a id="route" routerLink="/menulist">Menu</a></h1>
 
-  <div id="beerMenu">
-      <h2 class="beerName ammo" *ngFor="let item of item | async"> <span *ngIf='item.regularMenu == true; elseBlock'> {{item.title}} -</span> <span *ngIf='item.regularMenu == true; elseBlock' class="beerDescription">{{item.description}}</span></h2>
-  </div>
-
-  <h3 class="ammo centered">Starters</h3>
+  <h3 class="ammo centered">Lunch Menu</h3>
   <div class="row">
+    <div class="col-md-5">
+      <p *ngFor="let item of items | async"><span class="foodName" *ngIf='item.lunchMenu == true;'>{{item.title}}</span><span class="price" *ngIf='item.lunchMenu == true;'>${{item.price}}</span><br><span *ngIf='item.lunchMenu == true;'>{{item.description}}</span>
+        <br>
+        <span class="pairing" *ngIf='item.lunchMenu == true;'>Recommended pairing... {{item.pairing}}</span>
+      </p>
+
+    </div>
+
+  </div>
+  <h3 class="ammo centered">Starters</h3>
+  <!-- <div class="row">
     <div class="col-sm-6">
       <p><span class="foodName">Bavarian Prezel Sticks</span><span class="price">$9.49</span><br>3 Bavarian pretzel sticks, house-made 4 Kings Ale mustard, Blonde Ale cheese sauce.
         <br>
@@ -42,11 +49,11 @@
         <span class="pairing">Recommended pairing... Dos Pilotos</span>
       </p>
 
-    </div>
-  </div>
+    </div> -->
+  <!-- </div> -->
 
   <h3 class="ammo centered">Soups and Salad</h3>
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-sm-6">
       <p><span class="foodName">Props Salad</span><span class="price">$10.49</span><br>Arcadia mixed greens, tomato, cucumber, red onion and cheddar cheese served with your choice of House made bleu cheese, ranch, 1000 island, cheney Caesar or balsamic vinaigrette. <br>Add Grilled or Fried Chicken $3.00
         <br>
@@ -72,11 +79,11 @@
       </p>
 
     </div>
-  </div>
+  </div> -->
 
   <h3 class="ammo centered">Sandwiches and Wraps</h3>
   <p class="comesWith">Served with your choice of fries, house made potato chips or side salad.</p>
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-sm-6">
       <p><span class="foodName">Reuben</span><span class="price">$15.99</span><br>8 oz. of Duck Deli Pastrami, house made sauerkraut, Swiss cheese, and fresh made 1000 island served on marble rye bread.
         <br>
@@ -101,11 +108,11 @@
       </p>
 
     </div>
-  </div>
+  </div> -->
 
   <h3 class="ammo centered">Burgers</h3>
   <p class="comesWith">Served with your choice of fries house made potato chips or side salad</p>
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-sm-6">
       <p><span class="foodName">Props Burger</span><span class="price">$13.49</span><br>80/20 CAB, American cheese, LTOP, brioche bun.
         <br>
@@ -133,10 +140,10 @@
       </p>
 
     </div>
-  </div>
+  </div> -->
 
   <h3 class="ammo centered">Entrees</h3>
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-sm-6">
       <p><span class="foodName">Props Fish Tacos</span><span class="price">$11.99</span><br>White fish, slaw, black beans, flour tortillas, limes.
         <br>
@@ -173,10 +180,10 @@
       </p>
 
     </div>
-  </div>
+  </div> -->
 
   <h3 class="ammo centered">Sides and Add Ons</h3>
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-sm-6">
       <p><span class="foodName">Side Salad</span><span class="price">$4.99</span><br>Artisan mixed greens, lettuce, cherry tomato, red onion, cheddar jack cheese
       </p>
@@ -196,7 +203,7 @@
       </p>
 
     </div>
-  </div>
+  </div> -->
   <br>
   <br>
   <br>

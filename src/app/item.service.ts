@@ -29,8 +29,13 @@ export class ItemService {
       price: localUpdatedItem.price,
       description: localUpdatedItem.description,
       pairing: localUpdatedItem.pairing,
-      regularMenu: localUpdatedItem.regularMenu,
-      lunchMenu: localUpdatedItem.lunchMenu
+      lunchMenu: localUpdatedItem.lunchMenu,
+      starter: localUpdatedItem.starter,
+      soupSalad: localUpdatedItem.soupSalad,
+      sanWrap: localUpdatedItem.sanWrap,
+      burger: localUpdatedItem.burger,
+      entree: localUpdatedItem.entree,
+      side: localUpdatedItem.side
     });
   }
 

@@ -67,6 +67,7 @@
     <div class="all-beer">
       <div class="beerName ammo" *ngFor="let onTap of onTap | async">
         <h3>Title: {{onTap.title}}</h3>
+        <h3>Style: {{onTap.style}}</h3>
         <h3>Description: {{onTap.description}}</h3>
         <h3>Alcohol Percentage: {{onTap.abv}}%</h3>
         <h3>IBU: {{onTap.ibu}}</h3>
@@ -107,7 +108,7 @@
             <input class="checkbox" type="checkbox" [(ngModel)]="onTap.aleHouse" [value]="true">
           </div>
           <div class="form-group">
-            <label class="labels" for="onTap-tapRoom">On Tap at the Tap Room:</label>
+            <label class="labels" for="onTap-tapRoom">On Tap at the Tap Room?:</label>
             <input class="checkbox" type="checkbox" [(ngModel)]="onTap.tapRoom" [value]="true">
           </div>
           <button class="btn btn-success" (click)="editButtonClicked(onTap)">Submit!</button>

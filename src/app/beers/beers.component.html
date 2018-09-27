@@ -12,5 +12,21 @@
 
 <h1 class="ammo ontap"><a id="route" routerLink="/beerlist">Beers On Tap</a></h1>
 <div id="beerMenu">
-    <h2 class="beerName ammo" *ngFor="let onTap of onTap | async"> <span *ngIf='onTap.pub === true; elseBlock'> {{onTap.name}} -</span> <span *ngIf='onTap.pub === true; elseBlock' class="beerDescription">{{onTap.description}}</span></h2>
+    <h1 class="beerName ammo" *ngFor="let onTap of onTap | async">
+      <span class="title"> {{onTap.title}} </span>
+      <span class="beerDescription"> {{onTap.style}}</span>
+      <span class="abv">abv {{onTap.abv}} ibu {{onTap.ibu}}</span>
+      <br>
+      <span class="beerDescription"> {{onTap.description}}</span>
+    </h1>
 </div>
+<!-- <h1 class="ammo ontap"><a id="route" routerLink="/beerlist">Beers On Tap</a></h1>
+<div id="beerMenu">
+    <h1 class="beerName ammo" *ngFor="let onTap of onTap | async">
+      <span class="title" *ngIf='onTap.pub === true; elseBlock'> {{onTap.title}} </span>
+      <span class="beerDescription" *ngIf='onTap.pub === true; elseBlock'> {{onTap.style}}</span>
+      <span class="abv" *ngIf='onTap.pub === true; elseBlock'>abv {{onTap.abv}} ibu {{onTap.ibu}}</span>
+      <br>
+      <span class="beerDescription" *ngIf='onTap.pub === true; elseBlock'> {{onTap.description}}</span>
+    </h1>
+</div> -->

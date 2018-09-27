@@ -1,5 +1,4 @@
 export class Item {
-  public regularMenu: boolean = false;
   public lunchMenu: boolean = false;
   public starter: boolean = false;
   public soupSalad: boolean = false;
