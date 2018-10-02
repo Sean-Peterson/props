@@ -1,86 +1,74 @@
 <h1 class="ammo" id="name">Props Alehouse</h1>
 
-<img id="restImage" src="/../../assets/images/taproom.jpg" alt="Props Brewery and Grill">
+<img id="restImage" src="/../../assets/images/alehouseOutside.jpg" alt="Props Brewery and Grill">
 
 <div id="side">
-  <h4>Not to boast but...</h4>
-    <p>Master Brewers Association Members</p>
-    <p>Florida Brewerys Guild Members</p>
-    <p>American Brewers Association Members</p>
-    <!-- <p>5 STARS<br>-TripAdvisor</p> -->
-
-  <h4>Be one of the first to give us a review!</h4>
+  <div class="hours">
+    <h5>Hours of Operation:</h5>
+    <p>
+      S - 11a - 11p
+      <br>
+      M - 11a - 11p
+      <br>
+      T - 11a - 11p
+      <br>
+      W - 11a - 11p
+      <br>
+      T - 11a - 11p
+      <br>
+      F - 11a - 11p
+      <br>
+      S - 11a - 11p
+    </p>
+    <span><a href="https://www.google.com/maps/place/1128+E+John+Sims+Pkwy,+Niceville,+FL+32578/@30.517169,-86.468605,17z/data=!3m1!4b1!4m5!3m4!1s0x889169ae51419139:0xdbc67dbf52516948!8m2!3d30.5171644!4d-86.4664163" target="_blank">Directions</a></span>
+    <br>
+    <span>1128 E John Sims Pkwy</span>
+    <br>
+    <span>Niceville</span>
+    <br>
+    <span>(850) 586-7117</span>
+  </div>
+  <br>
+  <h6>Want to add to our 5 star reviews?</h6>
 
   <a href="https://www.yelp.com" target="_blank"><img class="revlogos" src="/../../assets/images/yelp-logo.jpeg" alt="props yelp"></a>
 
   <a href="https://www.tripadvisor.com" target="_blank"><img class="revlogos" src="/../../assets/images/tripadvisor.jpg" alt="props trip advisor"></a>
 
   <a href="https://www.google.com/search?q=props+alehouse&rlz=1C1ASRM_enUS777US777&oq=props+alehouse&aqs=chrome..69i57j69i60.2087j0j7&sourceid=chrome&ie=UTF-8" target="_blank"><img class="revlogos" src="/../../assets/images/google-icon.png" alt="props google reviews"></a>
-  <div class="hours">
-    <h5>Hours of Operation:</h5>
-    <p> Coming soon!
-      <!-- S - closed
-      <br>
-      M - closed
-      <br>
-      T - 3p -9p
-      <br>
-      W - 3p -9p
-      <br>
-      T - 3p -9p
-      <br>
-      F - 3p -9p
-      <br>
-      S - 12p -6p -->
-    </p>
-    <!-- <span><a href="https://www.google.com/maps/place/1128+E+John+Sims+Pkwy,+Niceville,+FL+32578/@30.517169,-86.468605,17z/data=!3m1!4b1!4m5!3m4!1s0x889169ae51419139:0xdbc67dbf52516948!8m2!3d30.5171644!4d-86.4664163" target="_blank">Directions</a></span> -->
-    <!-- <br> -->
-    <span>Coming Summer '18 To:</span>
-    <br>
-    <span>1128 E John Sims Pkwy</span>
-    <br>
-    <span>Niceville</span>
-    <!-- <br> -->
-    <!-- <span>(850) 586-7117</span> -->
-  </div>
 </div>
 
 <div class="ontap">
   <h1 class="ammo">Current List of Beers On Tap</h1>
   <hr>
   <div id="beerMenu" *ngFor="let onTap of onTap | async">
-    <h2 class="ammo" *ngIf='onTap.pub === true; elseBlock'> <span class="beerName"> {{onTap.title}} -</span> <span class="beerDescription">{{onTap.description}}</span></h2>
-  </div>
-</div>
-
-<div class="reviews">
-  <h1>Be one of the first to give us a review!</h1>
-  <!-- <h4>Great Place to Chill</h4>
-  <h5>Laid back place to chill and have a beer. They don't serve food at this location, but I always bring in some food or order a pizza. The Prop Oil Porter is my favorite. You gotta give it a try! <br>- Sean P</h5>
-  <h4>Great Beer!</h4>
-  <h5>Love Props! Great craft beers! Love how spacious the new location is. Awesome and friendly staff! I would highly recommend. <br>- Ivebeeneverywheredude </h5>
-  <h4>Great Beer, Great People!</h4>
-  <h5>I've been eating (and drinking) at Props since the original restaurant opened several years ago. I've always enjoyed the food and beer and I'm thrilled that they have opened the Brewery and Tap room. The bartenders are friendly and knowledgeable and the beer is wonderful! <br>- Jeff H</h5> -->
+    <h1 class="beerName ammo">
+      <span class="title"> {{onTap.title}} </span>
+      <span class="beerDescription"> {{onTap.style}}</span>
+      <span class="abv">abv {{onTap.abv}} ibu {{onTap.ibu}}</span>
+      <br>
+      <span class="beerDescription"> {{onTap.description}}</span>
+    </h1>
 </div>
 
 <div class="picCollage">
   <div class="row">
     <div class="col-md-4">
-      <img class="collagePic" src="/../../assets/images/fromdoor.jpg" alt="">
+      <img class="collagePic" src="/../../assets/images/alehouseDeck.png" alt="">
     </div>
     <div class="col-md-4">
-      <img class="collagePic" src="/../../assets/images/taproom2.jpg" alt="">
+      <img class="collagePic" src="/../../assets/images/alehouseFull.jpg" alt="">
     </div>
     <div class="col-md-4">
-      <img class="collagePic" src="/../../assets/images/taproom3.jpg" alt="">
+      <img class="collagePic" src="/../../assets/images/alehouse2.jpg" alt="">
     </div>
   </div>
   <div class="row secondrow">
     <div class="col-md-4">
-      <img class="collagePic" src="/../../assets/images/taproom4.jpg" alt="">
+      <img class="collagePic" src="/../../assets/images/alehouse3.jpg" alt="">
     </div>
     <div class="col-md-4">
-      <img class="collagePic" src="/../../assets/images/taproom.jpg" alt="">
+      <img class="collagePic" src="/../../assets/images/alehouse4.jpg" alt="">
     </div>
     <div class="col-md-4">
       <img class="collagePic" src="/../../assets/images/taproom.jpg" alt="">
