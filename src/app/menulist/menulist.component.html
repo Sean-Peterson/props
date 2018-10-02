@@ -62,17 +62,17 @@
 
     <div class="all-beer">
       <div class="beerName ammo" *ngFor="let item of item | async">
-        <h3>Title: {{item.title}}</h3>
-        <h3>Price: ${{item.price}}</h3>
-        <h3>Description: {{item.description}}</h3>
-        <h3>Pairing: {{item.pairing}}</h3>
-        <h3>On Lunch Menu: {{item.lunchMenu}}</h3>
-        <h3>Starter: {{item.starter}}</h3>
-        <h3>Soup Salad: {{item.soupSalad}}</h3>
-        <h3>Sandwich Wrap: {{item.sanWrap}}</h3>
-        <h3>Entree: {{item.entree}}</h3>
-        <h3>Burger: {{item.burger}}</h3>
-        <h3>Side: {{item.side}}</h3>
+        <h3>Title: <span class="smaller">{{item.title}}</span></h3>
+        <h3>Price: <span class="smaller">${{item.price}}</span></h3>
+        <h3>Description: <span class="smaller">{{item.description}}</span></h3>
+        <h3>Pairing: <span class="smaller">{{item.pairing}}</span></h3>
+        <h3>On Lunch Menu: <span class="smaller">{{item.lunchMenu}}</span></h3>
+        <h3>Starter: <span class="smaller">{{item.starter}}</span></h3>
+        <h3>Soup Salad: <span class="smaller">{{item.soupSalad}}</span></h3>
+        <h3>Sandwich Wrap: <span class="smaller">{{item.sanWrap}}</span></h3>
+        <h3>Entree: <span class="smaller">{{item.entree}}</span></h3>
+        <h3>Burger: <span class="smaller">{{item.burger}}</span></h3>
+        <h3>Side: <span class="smaller">{{item.side}}</span></h3>
         <button class="btn btn-warning" (click)="editForm.hidden =!editForm.hidden">Edit Item</button>
         <button class="btn btn-danger" (click)="beginDeletingItem(item)">Delete Item</button>
         <br>

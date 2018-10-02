@@ -16,7 +16,7 @@ export class MenulistComponent implements OnInit {
 
   ngOnInit() {
     this.item = this.itemService.getItem();
-    this.authenticated = true;
+    this.authenticated = false;
   }
 
   submitForm(title: string, price: number, description: string, pairing: string){

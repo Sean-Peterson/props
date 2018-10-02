@@ -66,14 +66,14 @@
 
     <div class="all-beer">
       <div class="beerName ammo" *ngFor="let onTap of onTap | async">
-        <h3>Title: {{onTap.title}}</h3>
-        <h3>Style: {{onTap.style}}</h3>
-        <h3>Description: {{onTap.description}}</h3>
-        <h3>Alcohol Percentage: {{onTap.abv}}%</h3>
-        <h3>IBU: {{onTap.ibu}}</h3>
-        <h3>On Tap at Pub: {{onTap.pub}}</h3>
-        <h3>On Tap at Ale House: {{onTap.aleHouse}}</h3>
-        <h3>On Tap at Tap Room: {{onTap.tapRoom}}</h3>
+        <h3>Title: <span class="smaller">{{onTap.title}}</span></h3>
+        <h3>Style: <span class="smaller">{{onTap.style}}</span></h3>
+        <h3>Description: <span class="smaller">{{onTap.description}}</span></h3>
+        <h3>Alcohol Percentage: <span class="smaller">{{onTap.abv}}%</span></h3>
+        <h3>IBU: <span class="smaller">{{onTap.ibu}}</span></h3>
+        <h3>On Tap at Pub: <span class="smaller">{{onTap.pub}}</span></h3>
+        <h3>On Tap at Ale House: <span class="smaller">{{onTap.aleHouse}}</span></h3>
+        <h3>On Tap at Tap Room: <span class="smaller">{{onTap.tapRoom}}</span></h3>
         <button class="btn btn-warning" (click)="editForm.hidden =!editForm.hidden">Edit Beer</button>
         <button class="btn btn-danger" (click)="beginDeletingBeer(onTap)">Delete Beer</button>
         <br>
