@@ -41,7 +41,7 @@ export class MenulistComponent implements OnInit {
 
   authenticate(userName: string, password: string){
     var savedUserName: string = "Props";
-    var savedPassword: string = "Props";
+    var savedPassword: string = "FlyingCoffin1";
     if(userName == savedUserName && password == savedPassword){
       this.authenticated = true;
     }else{
