@@ -1,0 +1,10 @@
+I want to create a database and views to control the beer list at each location of props.
+
+I am going to need:
+Firebase connection
+database
+objects
+observables
+subscribe to observables
+forms
+ngfor

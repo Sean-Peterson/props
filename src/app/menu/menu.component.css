@@ -7,8 +7,20 @@
   text-align: center;
 }
 
+.collumns{
+  display: inline-block;
+}
+
 .comesWith{
   text-align: center;
+}
+
+.description{
+  color: #c0c5ce;
+}
+
+.dontShow{
+  display: none;
 }
 
 .foodName{
@@ -20,14 +32,29 @@
   padding-top: 8vh;
 }
 
+.menuItem{
+  margin-top: 2vh;
+}
+
 .pairing{
   font-style: italic;
+  color: #c0c5ce;
 }
 
 .price{
   float: right;
+  color: #c0c5ce;
 }
 
 .words{
   color: white;
+}
+
+#route{
+  color: inherit;
+  cursor: default;
+}
+
+#route:hover{
+  text-decoration: none;
 }
