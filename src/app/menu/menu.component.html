@@ -1,7 +1,11 @@
 <div class="menu words">
-  <h1 class="ammo centered">Props Brewery and Grill Menu</h1>
+  <h1 class="ammo centered" id="menTitle">Props Brewery and Grill Menu</h1>
 
-  <h1 class="ammo centered">Lunch Menu <br><span class="smaller">Mon-Fri 11a-3p</span></h1>
+  <h1 class="ammo centered">Lunch Menu
+    <br>
+    <span class="smaller">Mon-Fri 11a-3p</span>
+  </h1>
+  <hr>
   <div *ngFor="let item of items | async">
     <div *ngIf='item.lunchMenu; else notShow'>
       <div class="menuItem">
@@ -15,6 +19,7 @@
       </div>
     </ng-template>
   </div>
+  <hr>
     <h1 class="ammo centered">Starters</h1>
     <div *ngFor="let item of items | async">
       <div *ngIf='item.starter; else notShow'>

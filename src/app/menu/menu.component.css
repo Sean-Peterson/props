@@ -1,3 +1,8 @@
+hr{
+  background-color: #c0c5ce;
+  height: 3px;
+}
+
 .ammo{
   font-family: military;
 }
@@ -53,6 +58,11 @@
 
 .words{
   color: white;
+}
+
+#menTitle{
+  font-size: 3.5em;
+  color: #c0c5ce;
 }
 
 #route{
