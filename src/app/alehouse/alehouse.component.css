@@ -18,8 +18,13 @@
   color: #c0c5ce;
 }
 
+.beerName{
+  margin-top: 5vh;
+}
+
 .collagePic{
-  max-width: 100%;
+  max-width: 105%;
+  margin-left: 1vw;
 }
 
 .dontShow{
@@ -43,6 +48,7 @@
 
 .picCollage{
   margin-top: 5vh;
+  margin-left: 5vw;
 }
 
 .picCollage .secondrow{
@@ -62,9 +68,10 @@
   width: 50px;
 }
 
-.beerName{
-  margin-top: 5vh;
+.row{
+  margin: 0 auto;
 }
+
 
 #name{
   text-align: center;
