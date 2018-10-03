@@ -42,13 +42,17 @@
   <h1 class="ammo">Current List of Beers On Tap</h1>
   <hr>
   <div id="beerMenu" *ngFor="let onTap of onTap | async">
-    <h1 class="beerName ammo">
+    <h1 class="beerName ammo" *ngIf="onTap.aleHouse; else notShow">
       <span class="title"> {{onTap.title}} </span>
       <span class="beerDescription"> {{onTap.style}}</span>
       <span class="abv">abv {{onTap.abv}} ibu {{onTap.ibu}}</span>
       <br>
       <span class="beerDescription"> {{onTap.description}}</span>
     </h1>
+    <ng-template #notShow>
+      <div class="dontShow">
+      </div>
+    </ng-template>
 </div>
 
 <div class="picCollage">

@@ -1,11 +1,11 @@
 <div class="menu words">
   <h1 class="ammo centered">Props Brewery and Grill Menu</h1>
 
-  <h3 class="ammo centered">Lunch Menu</h3>
+  <h1 class="ammo centered">Lunch Menu <br><span class="smaller">Mon-Fri 11a-3p</span></h1>
   <div *ngFor="let item of items | async">
     <div *ngIf='item.lunchMenu; else notShow'>
       <div class="menuItem">
-        <span class="foodName">{{item.title}}</span><span class="price">${{item.price}}</span><br><span class="description">{{item.description}}</span>
+        <span class="foodName">{{item.title}}</span><span class="price">$9.99</span><br><span class="description">{{item.description}}</span>
         <br>
         <span class="pairing">Recommended pairing... {{item.pairing}}</span>
       </div>
@@ -15,7 +15,7 @@
       </div>
     </ng-template>
   </div>
-    <h3 class="ammo centered">Starters</h3>
+    <h1 class="ammo centered">Starters</h1>
     <div *ngFor="let item of items | async">
       <div *ngIf='item.starter; else notShow'>
         <div class="menuItem">
@@ -30,7 +30,7 @@
       </ng-template>
     </div>
 
-    <h3 class="ammo centered">Soups and Salad</h3>
+    <h1 class="ammo centered">Soups and Salad</h1>
     <div *ngFor="let item of items | async">
       <div *ngIf='item.soupSalad; else notShow'>
         <div class="menuItem">
@@ -44,7 +44,7 @@
         </div>
       </ng-template>
     </div>
-      <h3 class="ammo centered">Sandwiches and Wraps</h3>
+      <h1 class="ammo centered">Sandwiches and Wraps</h1>
       <p class="comesWith">Served with your choice of fries, house made potato chips or side salad.</p>
       <div *ngFor="let item of items | async">
         <div *ngIf='item.sanWrap; else notShow'>
@@ -59,7 +59,7 @@
           </div>
         </ng-template>
       </div>
-        <h3 class="ammo centered">Burgers</h3>
+        <h1 class="ammo centered">Burgers</h1>
         <p class="comesWith">Served with your choice of fries house made potato chips or side salad</p>
         <div *ngFor="let item of items | async">
           <div *ngIf='item.burger; else notShow'>
@@ -74,7 +74,7 @@
             </div>
           </ng-template>
         </div>
-          <h3 class="ammo centered">Entrees</h3>
+          <h1 class="ammo centered">Entrees</h1>
           <div *ngFor="let item of items | async">
             <div *ngIf='item.entree; else notShow'>
               <div class="menuItem">
@@ -88,7 +88,7 @@
               </div>
             </ng-template>
           </div>
-            <h3 class="ammo centered">Sides and Add Ons</h3>
+            <h1 class="ammo centered">Sides and Add Ons</h1>
             <div *ngFor="let item of items | async">
               <div *ngIf='item.side; else notShow'>
                 <div class="menuItem">

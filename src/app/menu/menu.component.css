@@ -46,6 +46,11 @@
   color: #c0c5ce;
 }
 
+.smaller{
+  font-size: .5em;
+  /* font-family: sans-serif; */
+}
+
 .words{
   color: white;
 }
