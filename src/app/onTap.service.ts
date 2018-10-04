@@ -28,7 +28,7 @@ export class OnTapService {
       title: localUpdatedBeer.title,
       style: localUpdatedBeer.style,
       ibu: localUpdatedBeer.ibu,
-      alcoholContent: localUpdatedBeer.abv,
+      abv: localUpdatedBeer.abv,
       description: localUpdatedBeer.description,
       pub: localUpdatedBeer.pub,
       aleHouse: localUpdatedBeer.aleHouse,

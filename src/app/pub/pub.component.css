@@ -17,6 +17,10 @@
   color: #c0c5ce;
 }
 
+.beerName{
+  margin-top: 5vh;
+}
+
 .collagePic{
   max-width: 100%;
 }
@@ -42,6 +46,10 @@
 
 .picCollage .secondrow{
   margin-top: 2vh;
+}
+
+.restName{
+  padding-top: 500vh;
 }
 
 .reviews{

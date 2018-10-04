@@ -48,7 +48,7 @@
   <h1 class="ammo">Current List of Beers On Tap</h1>
   <hr>
   <div id="beerMenu" *ngFor="let onTap of onTap | async">
-    <h2 class="ammo" *ngIf='onTap.pub === true; else notShow'>
+    <h2 class="beerName ammo" *ngIf='onTap.pub === true; else notShow'>
       <span class="title"> {{onTap.title}} </span>
       <span class="beerDescription"> {{onTap.style}}</span>
       <span class="abv">abv {{onTap.abv}} ibu {{onTap.ibu}}</span>

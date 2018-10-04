@@ -18,6 +18,10 @@
   color: #c0c5ce;
 }
 
+.beerName{
+  margin-top: 5vh;
+}
+
 .collagePic{
   max-width: 100%;
 }
@@ -59,7 +63,7 @@
 }
 #name{
   text-align: center;
-  padding-top: 15vh;
+  padding-top: 20vh;
   font-size: 5em;
 }
 
