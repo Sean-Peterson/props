@@ -10,9 +10,12 @@ import { OnTapService } from './../onTap.service';
 })
 export class BeersComponent implements OnInit {
   onTap;
+  thisYear;
+  date = new Date();
   constructor(private OnTapService: OnTapService) { }
 
   ngOnInit() {
+    this.thisYear = this.date.getFullYear();
     this.onTap = this.OnTapService.getOnTap();
   }
 
