@@ -117,3 +117,14 @@
       position: relative;
     }
 }
+
+@media only screen
+  and (min-device-width: 360px)
+  and (max-device-width: 500px){
+
+    #name{
+      padding-top: 25vh;
+      font-size: 3.5em;
+    }
+
+}

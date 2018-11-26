@@ -99,7 +99,7 @@ transition: .5s ease-in-out all;
       width: 60%;
     }
     .nav a {
-      padding-bottom: 2vh;
+      padding-bottom: .5vh;
       font-size: 1em;
     }
 

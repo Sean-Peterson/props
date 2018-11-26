@@ -7,7 +7,7 @@
     <a routerLink=""><img id="navImage" src="../assets/images/propsLogo.png" alt="Props Craft Brewery Logo"></a>
 
     <div class="nav ammo">
-     <a routerLink="">Home</a><a routerLink="beers">Beers</a><a id="navMenu" routerLink="menu">Menu</a><a routerLink="culture">Culture</a><a routerLink="pub">Pub</a><a routerLink="alehouse">Alehouse</a><a routerLink="taproom">Brewery</a><a target="_blank" href="https://www.facebook.com/pg/PropsBreweryAndGrill/events/?ref=page_internal">Events</a>
+     <a routerLink="">Home</a><a routerLink="beers">Beers</a><a id="navMenu" routerLink="menu">Menu</a> <a href="http://propsmerch.wixsite.com/website" target="_blank">Merch</a> <a routerLink="pub">Pub</a><a routerLink="alehouse">Alehouse</a><a routerLink="taproom">Brewery</a> <a [routerLink]="['/taproom']" fragment="contractBrew">ContractBrew</a> <a routerLink="culture">Culture</a><a target="_blank" href="https://www.facebook.com/pg/PropsBreweryAndGrill/events/?ref=page_internal">Events</a>
     </div>
 
     <router-outlet></router-outlet>

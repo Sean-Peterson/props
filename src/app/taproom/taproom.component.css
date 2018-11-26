@@ -61,6 +61,14 @@
 #awards{
 
 }
+
+#contractBrew{
+  text-align: center;
+}
+#contractBrew h2{
+  margin-top: 10vh;
+}
+
 #name{
   text-align: center;
   padding-top: 20vh;
@@ -95,7 +103,8 @@
     }
 
     #name{
-      padding-top: 20vh;
+      padding-top: 25vh;
+      font-size: 3em;
     }
 
     #side{
