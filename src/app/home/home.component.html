@@ -1,7 +1,7 @@
   <div id="logo">
     <img id="homePic" src="/../../assets/images/bWBlurr.jpeg" alt="Props Craft Brewery Logo">
   </div>
-  <h1 class="bigHeader words ammo" id="veteran">Veteran Owned. Veteran Operated.</h1>
+  <h1 class="bigHeader words ammo" id="veteran">Veteran Owned. <span>Veteran Operated.</span></h1>
   <div id="beers">
     <div class="row">
       <img class="col-sm-3  beer" (click)="insertText('blonde')" src="/../../assets/images/blonde.png" alt="Blonde Bomber">
@@ -15,21 +15,21 @@
       <img class="col-sm-3  beer" (click)="insertText('porter')" src="/../../assets/images/prop-oil-porter.png" alt="Prop Oil Porter">
     </div>
     <br>
-    <h3 class="words ammo"><a routerLink="beers">Our Beers</a></h3>
+    <h3 class="smallHeader words ammo"><a routerLink="beers">Our Beers</a></h3>
   </div>
 
   <div class="words" id="about">
     <h1 class="bigHeader ammo">Our Culture</h1>
     <h2 class="ammo">Brew Beer. Drink Beer. Have Fun Doing it!</h2>
     <img src="../../assets/images/glasses.jpeg" alt="Props Craft Brewery">
-    <h3 class="ammo"><a routerLink="culture">Who We Are</a></h3>
+    <h3 class="ammo smallHeader"><a routerLink="culture">Who We Are</a></h3>
   </div>
 
   <div class="words" id="visit">
     <h1 class="bigHeader ammo">Visit Us</h1>
     <div class="row">
       <div class="col-sm-4">
-        <h2><a routerLink="pub">Brewery & Grill</a></h2>
+        <h1><a routerLink="pub">Brewery & Grill</a></h1>
         <span><a href="https://www.google.com/maps/dir//props+brewery+taproom+255+miracle+strip+parkway+fort+walton+beach" target="_blank">Directions</a></span>
         <br>
         <span>255 Miracle Strip Pkwy</span>
@@ -39,7 +39,7 @@
         <span>(850) 586-7117 ext. 1</span>
       </div>
       <div class="col-sm-4">
-        <h2><a routerLink="taproom">Brewery & Taproom</a></h2>
+        <h1><a routerLink="taproom">Brewery & Taproom</a></h1>
         <span><a href="https://www.google.com/maps/dir//props+brewery+taproom+125+lovejoy+road+fort+walton+beach">Directions</a></span>
         <br>
         <span>125 Lovejoy Rd</span>
@@ -49,7 +49,7 @@
         <span>(850) 586-7117 ext. 2</span>
       </div>
       <div class="col-sm-4">
-        <h2><a routerLink="alehouse">Props Ale House</a></h2>
+        <h1><a routerLink="alehouse">Props Ale House</a></h1>
         <span><a href="https://www.google.com/maps/place/1128+E+John+Sims+Pkwy,+Niceville,+FL+32578/@30.517169,-86.468605,17z/data=!3m1!4b1!4m5!3m4!1s0x889169ae51419139:0xdbc67dbf52516948!8m2!3d30.5171644!4d-86.4664163" target="_blank">Directions</a></span>
         <br>
         <span>1128 E John Sims Pkwy</span>
@@ -59,7 +59,7 @@
         <span>(850) 586-7117 ext. 2</span>
       </div>
     </div>
-    <div class="row" id="map">
+    <div id="map">
       <img class="gMaps col-sm-12" src="/../../assets/images/aleHouseMap.png" alt="Props Craft Brewery Locations">
       <a id="mapLeft" target="_blank" href="https://www.google.com/maps/dir//props+brewery+taproom+125+lovejoy+road+fort+walton+beach"></a>
       <a id="mapRight" target="_blank" href="https://www.google.com/maps/dir//props+brewery+taproom+255+miracle+strip+parkway+fort+walton+beach"></a>

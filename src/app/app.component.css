@@ -10,17 +10,23 @@ a{
 
 .ammo{
   font-family: military;
-}
-
-.container{
-  background-color: rgb(32,30,30);
-  min-height: 98vh;
-  position: relative;
-  color: white;
+  color: green;
 }
 
 .nav{
+  font-size: 2em;
+
+}
+
+.navOne{
   padding-top: 3vh;
+  text-align: right;
+  float: right;
+  position: absolute;
+  right: 0px;
+}
+.navTwo{
+  margin-top: 8vh;
   text-align: right;
   float: right;
   position: absolute;
@@ -32,8 +38,8 @@ a{
   margin-right: .5em;
   text-align: right;
   display: inline-block;
-  color: white;
-  font-size: 1.3em;
+  color: rgb(229, 229, 229);
+  font-size: .8em;
 }
 
 .show{
@@ -55,6 +61,7 @@ transition: .5s ease-in-out all;
   padding-top: 12vh;
   padding-bottom: 2vh;
   color: white;
+  background-color: rgb(27,25,25);
 }
 
 #ig{
@@ -68,12 +75,12 @@ transition: .5s ease-in-out all;
 }
 
 #navImage{
-  height: 8em;
-  width: 8em;
+  height: 10em;
+  width: 10em;
   float: left;
   position: absolute;
-  left: 4px;
-  top: 4px;
+  left: 6px;
+  top: 10px;
 }
 
 #soon{
@@ -92,7 +99,6 @@ transition: .5s ease-in-out all;
 @media only screen
   and (min-device-width: 360px)
   and (max-device-width: 500px){
-
     .nav{
       position: absolute;
       right: 0px;
