@@ -29,6 +29,7 @@ a{
   max-width: 85vw;
 }
 
+
 .smallHeader{
   font-size: 6em;
 }
@@ -54,6 +55,10 @@ a{
   width: 100%;
   height: 100%;
   padding-bottom: 3vh;
+}
+
+#all{
+  z-index: -1;
 }
 
 #beers{
@@ -124,8 +129,25 @@ a{
       display: none;
     }
 
+    .bigHeader{
+      font-size: 5em;
+    }
+
     .gMaps{
       display: none;
+    }
+
+    .row{
+      width: 90vw;
+    }
+
+    .col-sm-4{
+      padding-right: 0px;
+      width: 99vw;
+    }
+
+    .smallHeader{
+      font-size: 3.5em;
     }
 
     #about{
@@ -148,6 +170,7 @@ a{
 
     #note{
       margin-top: 2vh;
+      font-size: .8em;
     }
 
     #smallHide{
@@ -155,9 +178,10 @@ a{
     }
 
     #veteran{
-      margin-top: 5vh;
+      padding-top: 50vh;
       margin-bottom: 5vh;
     }
+
 }
 @media only screen
   and (min-device-width: 813px)

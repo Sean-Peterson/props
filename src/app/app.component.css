@@ -10,27 +10,30 @@ a{
 
 .ammo{
   font-family: military;
-  color: green;
 }
 
 .nav{
   font-size: 2em;
-
+  z-index: 9;
 }
 
 .navOne{
-  padding-top: 3vh;
+  margin-top: 3vh;
   text-align: right;
   float: right;
   position: absolute;
-  right: 0px;
+  right: 20px;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .navTwo{
-  margin-top: 8vh;
+  margin-top: 9vh;
   text-align: right;
   float: right;
   position: absolute;
-  right: 0px;
+  right: 20px;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .nav a{
@@ -45,6 +48,7 @@ a{
 .show{
 opacity: 1 !important;
 }
+
 .step{
 opacity: 0;
 transition: .5s ease-in-out all;
@@ -81,6 +85,11 @@ transition: .5s ease-in-out all;
   position: absolute;
   left: 6px;
   top: 10px;
+  z-index: 10;
+}
+
+#navMobile{
+  display: none;
 }
 
 #soon{
@@ -89,34 +98,35 @@ transition: .5s ease-in-out all;
   padding-bottom: 1.5px;
 }
 
-#total{
-  min-width: 95vw;
-  min-height: 98vh;
-  background-image: url("../assets/images/metalBG2.jpg");
-  background-size: cover;
-}
-
 @media only screen
   and (min-device-width: 360px)
-  and (max-device-width: 500px){
-    .nav{
-      position: absolute;
-      right: 0px;
-      width: 60%;
-    }
-    .nav a {
-      padding-bottom: .5vh;
-      font-size: 1em;
-    }
+  and (max-device-width: 812px){
 
-    #navImage{
-      height: 6em;
-      width: 6em;
+    .nav{
+      display: none;
     }
 
     #foot{
       padding-top: 10vh;
+      font-size: 1.1em;
     }
+
+    #navImage{
+      float: right;
+      position: relative;
+      right: 15px;
+      top: 10px;
+      height: 6em;
+      width: 6em;
+    }
+
+    #navMobile{
+      display: block;
+      position: absolute;
+    }
+
+
+
 }
 /* @media only screen
   and (min-device-width: 375px)
