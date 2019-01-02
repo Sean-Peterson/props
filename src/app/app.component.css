@@ -6,6 +6,7 @@
 a{
   cursor: pointer;
   text-decoration: none;
+  color: red;
 }
 
 .ammo{
@@ -68,14 +69,22 @@ transition: .5s ease-in-out all;
   background-color: rgb(27,25,25);
 }
 
+#foot img{
+  width: 30px;
+  height: 30px;
+}
+
+#menuButton{
+  display: none;
+}
+
 #ig{
   max-width: 2em;
   max-height: 2em;
 }
 
-#foot img{
-  width: 30px;
-  height: 30px;
+#navHide{
+  display: none;
 }
 
 #navImage{
@@ -103,7 +112,15 @@ transition: .5s ease-in-out all;
   and (max-device-width: 812px){
 
     .nav{
+      margin-top: 0px;
       display: none;
+    }
+
+    .navOne{
+      margin-top: 0px;
+    }
+    .navTwo{
+      margin-top: 0px;
     }
 
     #foot{
@@ -111,18 +128,29 @@ transition: .5s ease-in-out all;
       font-size: 1.1em;
     }
 
+    #menuButton{
+      display: inline;
+    }
+
+    #navHide{
+      visibility: hidden;
+    }
+
     #navImage{
-      float: right;
+      display: none;
+      /* float: right;
       position: relative;
-      right: 15px;
+      right: 40px;
       top: 10px;
       height: 6em;
-      width: 6em;
+      width: 6em; */
     }
 
     #navMobile{
       display: block;
       position: absolute;
+      z-index: 9;
+      background-color: black;
     }
 
 

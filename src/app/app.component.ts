@@ -11,6 +11,8 @@ import 'rxjs/add/observable/timer';
 export class AppComponent implements OnInit, OnDestroy {
   title = 'app';
 
+  public menuID: string = '';
+  public menuBool: boolean = false;
   public showloader: boolean = false;
   private subscription: Subscription;
   private timer: Observable<any>;
@@ -18,10 +20,21 @@ export class AppComponent implements OnInit, OnDestroy {
   public ngOnInit() {
     // call this setTimer method when you want to set timer
     // this.setTimer();
+    this.insertID();
   }
   public ngOnDestroy() {
     if ( this.subscription && this.subscription instanceof Subscription) {
       this.subscription.unsubscribe();
+    }
+  }
+
+  public insertID() {
+    if(this.menuBool == true){
+      this.menuID = 'navMobile';
+      this.menuBool = !this.menuBool;
+    }else{
+      this.menuID = 'navHide';
+      this.menuBool = !this.menuBool;
     }
   }
 
