@@ -1,8 +1,10 @@
+<div class="bg">
+
 <div *ngIf="showloader == true" id="soon" >
   <h3></h3>
 </div>
 
-<a routerLink=""><img id="navImage" src="../assets/images/propsLogo.png" alt="Props Craft Brewery Logo"></a>
+<a id='navRight' routerLink=""><img id="navImage" src="../assets/images/propsLogo.png" alt="Props Craft Brewery Logo"></a>
 
 <div class="nav ammo">
   <div class="navOne">
@@ -14,18 +16,19 @@
   </div>
 </div>
 
-<button id="menuButton" (click)="insertID()">Click ME</button>
+<img id="{{menuButton}}" (click)="insertID()" src="../assets/images/hamburger.png">
 <div id='{{menuID}}'>
-  <p><a routerLink="">Home</a></p>
-  <p><a routerLink="beers">Beers</a></p>
-  <p><a id="navMenu" routerLink="menu">Menu</a></p>
-  <p><a routerLink="pub">Pub</a></p>
-  <p><a routerLink="alehouse">Alehouse</a></p>
-  <p><a routerLink="taproom">Brewery</a></p>
-  <p><a href="http://propsmerch.wixsite.com/website" target="_blank">Merch</a></p>
-  <p><a [routerLink]="['/taproom']" fragment="contractBrew">ContractBrew</a></p>
-  <p><a routerLink="culture">Culture</a></p>
-  <p><a target="_blank" href="https://www.facebook.com/pg/PropsBreweryAndGrill/events/?ref=page_internal">Events</a></p>
+  <p class="mobileNavWords" (click)="insertID()">X Close</p>
+  <p><a class="mobileNavWords" routerLink="">Home</a></p>
+  <p><a class="mobileNavWords" routerLink="beers">Beers</a></p>
+  <p><a class="mobileNavWords" id="navMenu" routerLink="menu">Menu</a></p>
+  <p><a class="mobileNavWords" routerLink="pub">Pub</a></p>
+  <p><a class="mobileNavWords" routerLink="alehouse">Alehouse</a></p>
+  <p><a class="mobileNavWords" routerLink="taproom">Brewery</a></p>
+  <p><a class="mobileNavWords" href="http://propsmerch.wixsite.com/website" target="_blank">Merch</a></p>
+  <p><a class="mobileNavWords" [routerLink]="['/taproom']" fragment="contractBrew">ContractBrew</a></p>
+  <p><a class="mobileNavWords" routerLink="culture">Culture</a></p>
+  <p><a class="mobileNavWords" target="_blank" href="https://www.facebook.com/pg/PropsBreweryAndGrill/events/?ref=page_internal">Events</a></p>
 </div>
 
 <router-outlet></router-outlet>
@@ -33,4 +36,5 @@
 <div id="foot">
   <h4>Props Craft Brewery</h4>
   <p>125 Lovejoy Rd NW - propsbrewery@gmail.com - (850) 586-7117 - <a href="https://www.instagram.com/explore/locations/347867441/props-craft-brewery/"><img id="ig" src="/../assets/images/ig.png"></a><a href="https://www.facebook.com/PropsBreweryAndGrill/"><img id="fb" src="/../assets/images/fb.png"></a></p>
+</div>
 </div>

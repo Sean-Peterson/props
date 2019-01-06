@@ -14,6 +14,7 @@ export class AppComponent implements OnInit, OnDestroy {
   public menuID: string = '';
   public menuBool: boolean = false;
   public showloader: boolean = false;
+  public menuButton: string = 'menuButton';
   private subscription: Subscription;
   private timer: Observable<any>;
 
@@ -31,9 +32,11 @@ export class AppComponent implements OnInit, OnDestroy {
   public insertID() {
     if(this.menuBool == true){
       this.menuID = 'navMobile';
+      this.menuButton = 'menuButtonHide';
       this.menuBool = !this.menuBool;
     }else{
       this.menuID = 'navHide';
+      this.menuButton = 'menuButton';
       this.menuBool = !this.menuBool;
     }
   }

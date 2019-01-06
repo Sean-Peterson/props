@@ -6,11 +6,20 @@
 a{
   cursor: pointer;
   text-decoration: none;
-  color: red;
 }
 
 .ammo{
   font-family: military;
+}
+
+.bg{
+  background-color: black;
+}
+
+.mobileNavWords{
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 .nav{
@@ -129,7 +138,21 @@ transition: .5s ease-in-out all;
     }
 
     #menuButton{
-      display: inline;
+      height: 40px;
+      width: 40px;
+      display: block;
+      float: left;
+      position: absolute;
+      z-index: 10;
+      left: 8px;
+      top: 8px;
+      /* background-color: rgba(0, 0, 0, 0.5); */
+      text-decoration: underline;
+      font-family: military;
+    }
+
+    #menuButtonHide{
+      display: none;
     }
 
     #navHide{
@@ -137,20 +160,27 @@ transition: .5s ease-in-out all;
     }
 
     #navImage{
-      display: none;
-      /* float: right;
+      height: 80px;
+      width: 80px;
       position: relative;
-      right: 40px;
-      top: 10px;
-      height: 6em;
-      width: 6em; */
+      top: 0px;
+    }
+
+    #navRight{
+      /* display: none; */
+      float: right;
+      position: fixed;
+      right: 10px;
+      top: 5px;
+      z-index: 10;
     }
 
     #navMobile{
+      transition: .5s ease-in-out all;
       display: block;
       position: absolute;
       z-index: 9;
-      background-color: black;
+      background-color: rgba(0, 0, 0, 0.5);
     }
 
 
