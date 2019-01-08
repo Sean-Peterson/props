@@ -3,6 +3,11 @@ p{
   padding-bottom: 2vh;
 }
 
+.all{
+  background-color: rgb(31, 29, 29);
+  padding: 0px 40px 0px 40px;
+}
+
 .ammo{
   font-family: military;
 }
@@ -13,14 +18,18 @@ p{
 }
 
 .pic{
-  max-height: 275px;
-  max-width: 350px;
-  margin: 0 auto;
+  max-height: 40vh;
+  max-width: 33%;
+  /* margin: 0 auto; */
   padding: 0px 0px 20px 0px;
 }
 
 .words{
   color: white;
+}
+
+#motto{
+  font-size: 3.5em;
 }
 
 #owners{
@@ -30,8 +39,11 @@ p{
 
 #top{
   padding-top: 22vh;
+  font-size: 4em;
 }
 
 #paragraph{
-  font-size: 1.2em;
+  padding: 50px 0px 50px 0px;
+  font-size: 2em;
+  font-weight: 500;
 }

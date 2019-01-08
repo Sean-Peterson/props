@@ -1,88 +1,91 @@
-<h1 class="ammo" id="name">Props Brewery / Grill</h1>
+<div class="all">
 
-<img id="restImage" src="/../../assets/images/pub.jpg" alt="Props Brewery and Grill">
+  <h1 class="ammo" id="name">Props Brewery / Grill</h1>
 
-<div id="side">
-  <div class="hours">
-    <h5>Hours of Operation:</h5>
-    <p>
-      S - 11a - 11p
+  <img id="restImage" src="/../../assets/images/pub.jpg" alt="Props Brewery and Grill">
+
+  <div id="side">
+    <div class="hours">
+      <h5>Hours of Operation:</h5>
+      <p>
+        S - 11a - 11p
+        <br>
+        M - 11a - 11p
+        <br>
+        T - 11a - 11p
+        <br>
+        W - 11a - 11p
+        <br>
+        T - 11a - 11p
+        <br>
+        F - 11a - 11p
+        <br>
+        S - 11a - 11p
+      </p>
+      <a href="https://www.google.com/maps/dir//props+brewery+taproom+255+miracle+strip+parkway+fort+walton+beach" target="_blank">Directions</a>
       <br>
-      M - 11a - 11p
+      <span>255 Miracle Strip Pkwy</span>
       <br>
-      T - 11a - 11p
+      <span>Fort Walton Beach</span>
       <br>
-      W - 11a - 11p
-      <br>
-      T - 11a - 11p
-      <br>
-      F - 11a - 11p
-      <br>
-      S - 11a - 11p
-    </p>
-    <a href="https://www.google.com/maps/dir//props+brewery+taproom+255+miracle+strip+parkway+fort+walton+beach" target="_blank">Directions</a>
+      <span>(850) 586-7117 ext. 1</span>
+    </div>
     <br>
-    <span>255 Miracle Strip Pkwy</span>
+    <h6>Add to our 5 start reviews!</h6>
+
+    <a href="https://www.yelp.com/biz/props-brewery-and-grill-fort-walton-beach" target="_blank"><img class="revlogos" src="/../../assets/images/yelp-logo.jpeg" alt="props yelp"></a>
+
+    <a href="https://www.tripadvisor.com/Restaurant_Review-g34234-d2441129-Reviews-Props_Craft_Brewery_Grill-Fort_Walton_Beach_Florida.html" target="_blank"><img class="revlogos" src="/../../assets/images/tripadvisor.jpg" alt="props trip advisor"></a>
+
+    <a href="https://www.google.com/search?rlz=1C1ASRM_enUS777US777&biw=1920&bih=947&ei=574WW5bgGNGotQW944_YCw&q=props+brewery+and+grill+reviews&oq=props+brewery+and+grill+reviews&gs_l=psy-ab.3..35i39k1.24768.25565.0.26319.2.2.0.0.0.0.73.144.2.2.0....0...1.1.64.psy-ab..0.2.144....0.qAJSikvSRk4" target="_blank"><img class="revlogos" src="/../../assets/images/google-icon.png" alt="props google reviews"></a>
     <br>
-    <span>Fort Walton Beach</span>
     <br>
-    <span>(850) 586-7117 ext. 1</span>
+    <p>Best Burger in FWB<br>-Southern Living</p>
+    <p>Hall of Fame<br>-TripAdvisor</p>
+    <p>4+ STARS<br>-yelp</p>
   </div>
-  <br>
-  <h6>Add to our 5 start reviews!</h6>
-
-  <a href="https://www.yelp.com/biz/props-brewery-and-grill-fort-walton-beach" target="_blank"><img class="revlogos" src="/../../assets/images/yelp-logo.jpeg" alt="props yelp"></a>
-
-  <a href="https://www.tripadvisor.com/Restaurant_Review-g34234-d2441129-Reviews-Props_Craft_Brewery_Grill-Fort_Walton_Beach_Florida.html" target="_blank"><img class="revlogos" src="/../../assets/images/tripadvisor.jpg" alt="props trip advisor"></a>
-
-  <a href="https://www.google.com/search?rlz=1C1ASRM_enUS777US777&biw=1920&bih=947&ei=574WW5bgGNGotQW944_YCw&q=props+brewery+and+grill+reviews&oq=props+brewery+and+grill+reviews&gs_l=psy-ab.3..35i39k1.24768.25565.0.26319.2.2.0.0.0.0.73.144.2.2.0....0...1.1.64.psy-ab..0.2.144....0.qAJSikvSRk4" target="_blank"><img class="revlogos" src="/../../assets/images/google-icon.png" alt="props google reviews"></a>
-  <br>
-  <br>
-  <p>Best Burger in FWB<br>-Southern Living</p>
-  <p>Hall of Fame<br>-TripAdvisor</p>
-  <p>4+ STARS<br>-yelp</p>
-</div>
 
 
-<div class="ontap">
-  <h1 class="ammo">Current List of Beers On Tap</h1>
-  <hr>
-  <div id="beerMenu" *ngFor="let onTap of onTap | async">
-    <h2 class="beerName ammo" *ngIf='onTap.pub === true; else notShow'>
-      <span class="title"> {{onTap.title}} </span>
-      <span class="beerDescription"> {{onTap.style}}</span>
-      <span class="abv">abv {{onTap.abv}} ibu {{onTap.ibu}}</span>
-      <br>
-      <span class="beerDescription"> {{onTap.description}}</span>
-    </h2>
-    <ng-template #notShow>
-      <div class="dontShow">
+  <div class="ontap">
+    <h1 class="ammo">Current List of Beers On Tap</h1>
+    <hr>
+    <div id="beerMenu" *ngFor="let onTap of onTap | async">
+      <h2 class="beerName ammo" *ngIf='onTap.pub === true; else notShow'>
+        <span class="title"> {{onTap.title}} </span>
+        <span class="beerDescription"> {{onTap.style}}</span>
+        <span class="abv">abv {{onTap.abv}} ibu {{onTap.ibu}}</span>
+        <br>
+        <span class="beerDescription"> {{onTap.description}}</span>
+      </h2>
+      <ng-template #notShow>
+        <div class="dontShow">
+        </div>
+      </ng-template>
+    </div>
+  </div>
+
+  <div class="picCollage">
+    <div class="row">
+      <div class="col-md-4">
+        <img class="collagePic" src="/../../assets/images/dosCans.jpg" alt="">
       </div>
-    </ng-template>
-  </div>
-</div>
-
-<div class="picCollage">
-  <div class="row">
-    <div class="col-md-4">
-      <img class="collagePic" src="/../../assets/images/dosCans.jpg" alt="">
+      <div class="col-md-4">
+        <img class="collagePic" src="/../../assets/images/fermenter.jpg" alt="">
+      </div>
+      <div class="col-md-4">
+        <img class="collagePic" src="/../../assets/images/handle.jpg" alt="">
+      </div>
     </div>
-    <div class="col-md-4">
-      <img class="collagePic" src="/../../assets/images/fermenter.jpg" alt="">
-    </div>
-    <div class="col-md-4">
-      <img class="collagePic" src="/../../assets/images/handle.jpg" alt="">
-    </div>
-  </div>
-  <div class="row secondrow">
-    <div class="col-md-4">
-      <img class="collagePic" src="/../../assets/images/keg.jpg" alt="">
-    </div>
-    <div class="col-md-4">
-      <img class="collagePic" src="/../../assets/images/malts.jpg" alt="">
-    </div>
-    <div class="col-md-4">
-      <img class="collagePic" src="/../../assets/images/handleLogo.jpg" alt="">
+    <div class="row secondrow">
+      <div class="col-md-4">
+        <img class="collagePic" src="/../../assets/images/keg.jpg" alt="">
+      </div>
+      <div class="col-md-4">
+        <img class="collagePic" src="/../../assets/images/malts.jpg" alt="">
+      </div>
+      <div class="col-md-4">
+        <img class="collagePic" src="/../../assets/images/handleLogo.jpg" alt="">
+      </div>
     </div>
   </div>
 </div>

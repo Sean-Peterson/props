@@ -7,8 +7,14 @@
   color: #c0c5ce;
 }
 
+.all{
+  background-color: rgb(31, 29, 29);
+  padding: 0px 40px 0px 40px;
+}
+
 .ammo{
   font-family: military;
+  color: white;
 }
 
 .beerDescription{
@@ -28,6 +34,7 @@
 
 .hours{
   margin-top: 2vh;
+  color: #c0c5ce;
 }
 
 .hours a{
@@ -64,9 +71,10 @@
 
 #contractBrew{
   text-align: center;
+  color: white;
 }
 #contractBrew h2{
-  margin-top: 10vh;
+  padding-top: 10vh;
 }
 
 #name{

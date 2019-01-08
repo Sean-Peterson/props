@@ -1,17 +1,18 @@
-<div id="beers">
-  <h1 class="words ammo" id="series">{{thisYear}} distributed series</h1>
-  <div class="row">
-    <img class="col-sm-3  beer" (click)="insertText('coffin')" src="/../../assets/images/flyingCoffin.png" alt="Flying Coffin">
-    <img class="col-sm-3  beer" (click)="insertText('dos')" src="/../../assets/images/dosPilotos.png" alt="Dos Pilotos">
-    <img class="col-sm-3  beer" (click)="insertText('blonde')" src="/../../assets/images/blonde.png" alt="Blonde Bomber">
-    <img class="col-sm-3  beer" (click)="insertText('kings')" src="/../../assets/images/4kings.png" alt="Four Kings">
+<div class="all">
+  <div id="beers">
+    <h1 class="words ammo" id="series">{{thisYear}} distributed series</h1>
+    <div class="row">
+      <img class="col-sm-3  beer" (click)="insertText('coffin')" src="/../../assets/images/flyingCoffin.png" alt="Flying Coffin">
+      <img class="col-sm-3  beer" (click)="insertText('dos')" src="/../../assets/images/dosPilotos.png" alt="Dos Pilotos">
+      <img class="col-sm-3  beer" (click)="insertText('blonde')" src="/../../assets/images/blonde.png" alt="Blonde Bomber">
+      <img class="col-sm-3  beer" (click)="insertText('kings')" src="/../../assets/images/4kings.png" alt="Four Kings">
+    </div>
   </div>
-</div>
 
-<h4 class="words">Our Distributed Series can be found in bars, package shops, and grocery stores anywhere between Mobile, AL to Appalachicola, FL and all the way up to Huntsville, AL.</h4>
+  <h4 class="words">Our Distributed Series can be found in bars, package shops, and grocery stores anywhere between Mobile, AL to Appalachicola, FL and all the way up to Huntsville, AL.</h4>
 
-<h1 class="ammo ontap">Beers On Tap</h1>
-<div id="beerMenu">
+  <h1 class="ammo ontap">Beers On Tap</h1>
+  <div id="beerMenu">
     <h1 class="beerName ammo" *ngFor="let onTap of onTap | async">
       <span class="title"> {{onTap.title}} </span>
       <span class="beerDescription"> {{onTap.style}}</span>
@@ -19,4 +20,5 @@
       <br>
       <span class="beerDescription"> {{onTap.description}}</span>
     </h1>
+  </div>
 </div>

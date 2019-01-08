@@ -17,16 +17,16 @@
 <img id="{{menuButton}}" (click)="insertID()" src="../assets/images/hamburger.png">
 <div id='{{menuID}}'>
   <p class="mobileNavWords" (click)="insertID()">X Close</p>
-  <p><a class="mobileNavWords" routerLink="">Home</a></p>
-  <p><a class="mobileNavWords" routerLink="beers">Beers</a></p>
-  <p><a class="mobileNavWords" id="navMenu" routerLink="menu">Menu</a></p>
-  <p><a class="mobileNavWords" routerLink="pub">Pub</a></p>
-  <p><a class="mobileNavWords" routerLink="alehouse">Alehouse</a></p>
-  <p><a class="mobileNavWords" routerLink="taproom">Brewery</a></p>
-  <p><a class="mobileNavWords" href="http://propsmerch.wixsite.com/website" target="_blank">Merch</a></p>
-  <p><a class="mobileNavWords" [routerLink]="['/taproom']" fragment="contractBrew">ContractBrew</a></p>
-  <p><a class="mobileNavWords" routerLink="culture">Culture</a></p>
-  <p><a class="mobileNavWords" target="_blank" href="https://www.facebook.com/pg/PropsBreweryAndGrill/events/?ref=page_internal">Events</a></p>
+  <p><a class="mobileNavWords" (click)="insertID()" routerLink="">Home</a></p>
+  <p><a class="mobileNavWords" (click)="insertID()" routerLink="beers">Beers</a></p>
+  <p><a class="mobileNavWords" (click)="insertID()" id="navMenu" routerLink="menu">Menu</a></p>
+  <p><a class="mobileNavWords" (click)="insertID()" routerLink="pub">Pub</a></p>
+  <p><a class="mobileNavWords" (click)="insertID()" routerLink="alehouse">Alehouse</a></p>
+  <p><a class="mobileNavWords" (click)="insertID()" routerLink="taproom">Brewery</a></p>
+  <p><a class="mobileNavWords" (click)="insertID()" href="http://propsmerch.wixsite.com/website" target="_blank">Merch</a></p>
+  <p><a class="mobileNavWords" (click)="insertID()" [routerLink]="['/taproom']" fragment="contractBrew">ContractBrew</a></p>
+  <p><a class="mobileNavWords" (click)="insertID()" routerLink="culture">Culture</a></p>
+  <p><a class="mobileNavWords" (click)="insertID()" target="_blank" href="https://www.facebook.com/pg/PropsBreweryAndGrill/events/?ref=page_internal">Events</a></p>
 </div>
 
 <router-outlet></router-outlet>

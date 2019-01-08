@@ -1,81 +1,83 @@
-<h1 class="ammo" id="name">Props Alehouse</h1>
+<div class="all">
+  <h1 class="ammo" id="name">Props Alehouse</h1>
 
-<img id="restImage" src="/../../assets/images/alehouseOutside2.jpg" alt="Props Ale House">
+  <img id="restImage" src="/../../assets/images/alehouseOutside2.jpg" alt="Props Ale House">
 
-<div id="side">
-  <div class="hours">
-    <h5>Hours of Operation:</h5>
-    <p>
-      S - 11a - 11p
+  <div id="side">
+    <div class="hours">
+      <h5>Hours of Operation:</h5>
+      <p>
+        S - 11a - 11p
+        <br>
+        M - 11a - 11p
+        <br>
+        T - 11a - 11p
+        <br>
+        W - 11a - 11p
+        <br>
+        T - 11a - 11p
+        <br>
+        F - 11a - 12p
+        <br>
+        S - 11a - 12p
+      </p>
+      <span><a href="https://www.google.com/maps/place/1128+E+John+Sims+Pkwy,+Niceville,+FL+32578/@30.517169,-86.468605,17z/data=!3m1!4b1!4m5!3m4!1s0x889169ae51419139:0xdbc67dbf52516948!8m2!3d30.5171644!4d-86.4664163" target="_blank">Directions</a></span>
       <br>
-      M - 11a - 11p
+      <span>1128 E John Sims Pkwy</span>
       <br>
-      T - 11a - 11p
+      <span>Niceville</span>
       <br>
-      W - 11a - 11p
-      <br>
-      T - 11a - 11p
-      <br>
-      F - 11a - 12p
-      <br>
-      S - 11a - 12p
-    </p>
-    <span><a href="https://www.google.com/maps/place/1128+E+John+Sims+Pkwy,+Niceville,+FL+32578/@30.517169,-86.468605,17z/data=!3m1!4b1!4m5!3m4!1s0x889169ae51419139:0xdbc67dbf52516948!8m2!3d30.5171644!4d-86.4664163" target="_blank">Directions</a></span>
+      <span>(850) 586-7117 ext 2</span>
+    </div>
     <br>
-    <span>1128 E John Sims Pkwy</span>
-    <br>
-    <span>Niceville</span>
-    <br>
-    <span>(850) 586-7117 ext 2</span>
+    <h6>Add to our 5 star reviews!</h6>
+
+    <a href="https://www.yelp.com" target="_blank"><img class="revlogos" src="/../../assets/images/yelp-logo.jpeg" alt="props yelp"></a>
+
+    <a href="https://www.tripadvisor.com" target="_blank"><img class="revlogos" src="/../../assets/images/tripadvisor.jpg" alt="props trip advisor"></a>
+
+    <a href="https://www.google.com/search?q=props+alehouse&rlz=1C1ASRM_enUS777US777&oq=props+alehouse&aqs=chrome..69i57j69i60.2087j0j7&sourceid=chrome&ie=UTF-8" target="_blank"><img class="revlogos" src="/../../assets/images/google-icon.png" alt="props google reviews"></a>
   </div>
-  <br>
-  <h6>Add to our 5 star reviews!</h6>
 
-  <a href="https://www.yelp.com" target="_blank"><img class="revlogos" src="/../../assets/images/yelp-logo.jpeg" alt="props yelp"></a>
+  <div class="ontap">
+    <h1 class="ammo">Current List of Beers On Tap</h1>
+    <hr>
+    <div id="beerMenu" *ngFor="let onTap of onTap | async">
+      <h1 class="beerName ammo" *ngIf="onTap.aleHouse; else notShow">
+        <span class="title"> {{onTap.title}} </span>
+        <span class="beerDescription"> {{onTap.style}}</span>
+        <span class="abv">abv {{onTap.abv}} ibu {{onTap.ibu}}</span>
+        <br>
+        <span class="beerDescription"> {{onTap.description}}</span>
+      </h1>
+      <ng-template #notShow>
+        <div class="dontShow">
+        </div>
+      </ng-template>
+    </div>
 
-  <a href="https://www.tripadvisor.com" target="_blank"><img class="revlogos" src="/../../assets/images/tripadvisor.jpg" alt="props trip advisor"></a>
-
-  <a href="https://www.google.com/search?q=props+alehouse&rlz=1C1ASRM_enUS777US777&oq=props+alehouse&aqs=chrome..69i57j69i60.2087j0j7&sourceid=chrome&ie=UTF-8" target="_blank"><img class="revlogos" src="/../../assets/images/google-icon.png" alt="props google reviews"></a>
-</div>
-
-<div class="ontap">
-  <h1 class="ammo">Current List of Beers On Tap</h1>
-  <hr>
-  <div id="beerMenu" *ngFor="let onTap of onTap | async">
-    <h1 class="beerName ammo" *ngIf="onTap.aleHouse; else notShow">
-      <span class="title"> {{onTap.title}} </span>
-      <span class="beerDescription"> {{onTap.style}}</span>
-      <span class="abv">abv {{onTap.abv}} ibu {{onTap.ibu}}</span>
-      <br>
-      <span class="beerDescription"> {{onTap.description}}</span>
-    </h1>
-    <ng-template #notShow>
-      <div class="dontShow">
+    <div class="picCollage">
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="collagePic" src="/../../assets/images/alehouseDeck.png" alt="Props Ale House">
+        </div>
+        <div class="col-lg-4">
+          <img class="collagePic" src="/../../assets/images/alehouseFull.jpg" alt="Props Ale House">
+        </div>
+        <div class="col-lg-4">
+          <img class="collagePic" src="/../../assets/images/alehouse2.jpg" alt="Props Ale House">
+        </div>
       </div>
-    </ng-template>
-</div>
-
-<div class="picCollage">
-  <div class="row">
-    <div class="col-lg-4">
-      <img class="collagePic" src="/../../assets/images/alehouseDeck.png" alt="Props Ale House">
-    </div>
-    <div class="col-lg-4">
-      <img class="collagePic" src="/../../assets/images/alehouseFull.jpg" alt="Props Ale House">
-    </div>
-    <div class="col-lg-4">
-      <img class="collagePic" src="/../../assets/images/alehouse2.jpg" alt="Props Ale House">
+      <div class="row secondrow">
+        <div class="col-lg-4">
+          <img class="collagePic" src="/../../assets/images/alehouse3.jpg" alt="Props Ale House">
+        </div>
+        <div class="col-lg-4">
+          <img class="collagePic" src="/../../assets/images/alehouse4.jpg" alt="Props Ale House">
+        </div>
+        <div class="col-lg-4">
+          <img class="collagePic" src="/../../assets/images/alehouse5.jpg" alt="Props Ale House">
+        </div>
+      </div>
     </div>
   </div>
-  <div class="row secondrow">
-    <div class="col-lg-4">
-      <img class="collagePic" src="/../../assets/images/alehouse3.jpg" alt="Props Ale House">
-    </div>
-    <div class="col-lg-4">
-      <img class="collagePic" src="/../../assets/images/alehouse4.jpg" alt="Props Ale House">
-    </div>
-    <div class="col-lg-4">
-      <img class="collagePic" src="/../../assets/images/alehouse5.jpg" alt="Props Ale House">
-    </div>
-  </div>
-</div>

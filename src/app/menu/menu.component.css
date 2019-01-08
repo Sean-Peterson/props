@@ -3,6 +3,11 @@ hr{
   height: 3px;
 }
 
+.all{
+  background-color: rgb(31, 29, 29);
+  padding: 0px 40px 0px 40px;
+}
+
 .ammo{
   font-family: military;
 }
