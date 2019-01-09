@@ -1,21 +1,97 @@
+hr{
+  background-color: #c0c5ce;
+  height: 3px;
+}
+
+.all{
+  background-color: rgb(31, 29, 29);
+  padding: 0px 40px 0px 40px;
+}
+
 .ammo{
   font-family: military;
 }
 
 .centered{
-  margin-top: 10vh;
+  padding-top: 10vh;
   text-align: center;
 }
 
+.collumns{
+  display: inline-block;
+}
+
+.comesWith{
+  text-align: center;
+}
+
+.description{
+  color: #c0c5ce;
+}
+
+.dontShow{
+  display: none;
+}
+
 .foodName{
-  font-size: 1.2em;
+  font-size: 1.6em;
   font-weight: bold;
+}
+
+.menu{
+  padding-top: 8vh;
+}
+
+.menuItem{
+  margin-top: 2vh;
+}
+
+.pairing{
+  font-style: italic;
+  color: #c0c5ce;
 }
 
 .price{
   float: right;
+  color: #c0c5ce;
+}
+
+.smaller{
+  font-size: .5em;
+  /* font-family: sans-serif; */
 }
 
 .words{
   color: white;
 }
+
+#menTitle{
+  padding-top: 20vh;
+  font-size: 3.5em;
+}
+
+#route{
+  color: inherit;
+  cursor: default;
+}
+
+#route:hover{
+  text-decoration: none;
+}
+
+@media only screen
+  and (min-device-width: 360px)
+  and (max-device-width: 812px){
+    #menTitle{
+      padding-top: 10vh;
+    }
+  }
+
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px){
+    #menTitle{
+      padding-top: 10vh;
+    }
+
+  }

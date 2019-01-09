@@ -12,25 +12,235 @@ a{
   font-family: military;
 }
 
-.container{
-  background-color: rgb(32,30,30);
-  min-height: 98vh;
+
+.mobileNavWords{
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 .nav{
-  padding-top: 3vh;
+  font-size: 2em;
+  z-index: 9;
+}
+
+.navOne{
+  margin-top: 3vh;
+  text-align: right;
+  float: right;
+  position: absolute;
+  right: 20px;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.navTwo{
+  margin-top: 9vh;
+  text-align: right;
+  float: right;
+  position: absolute;
+  right: 20px;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .nav a{
-  margin: 0 auto;
+  margin-left: .5em;
+  margin-right: .5em;
+  text-align: right;
   display: inline-block;
-  color: white;
-  font-size: 1.5em;
+  color: rgb(229, 229, 229);
+  font-size: .8em;
 }
 
-#total{
-  min-width: 95vw;
-  min-height: 98vh;
-  background-image: url("../assets/images/metalBG2.jpg");
-  background-size: cover;
+.show{
+opacity: 1 !important;
+}
+
+.step{
+opacity: 0;
+transition: .5s ease-in-out all;
+}
+
+#fb{
+  min-width: 3em;
+  min-height: 3em;
+}
+
+#foot{
+  font-family: copperplate gothic;
+  text-align: center;
+  padding-top: 12vh;
+  padding-bottom: 2vh;
+  color: white;
+  background-color: rgb(27,25,25);
+}
+
+#foot img{
+  width: 30px;
+  height: 30px;
+}
+
+#menuButton{
+  display: none;
+}
+
+#ig{
+  max-width: 2em;
+  max-height: 2em;
+}
+
+#navHide{
+  display: none;
+}
+
+#navImage{
+  height: 10em;
+  width: 10em;
+  float: left;
+  position: absolute;
+  left: 6px;
+  top: 10px;
+  z-index: 10;
+}
+
+#navMobile{
+  display: none;
+}
+
+#soon{
+  text-align: center;
+  background-color: #c0c5ce;
+  padding-bottom: 1.5px;
+}
+
+@media only screen
+  and (min-device-width: 360px)
+  and (max-device-width: 812px){
+
+    .nav{
+      margin-top: 0px;
+      display: none;
+    }
+
+    .navOne{
+      margin-top: 0px;
+    }
+    .navTwo{
+      margin-top: 0px;
+    }
+
+    #foot{
+      padding-top: 10vh;
+      font-size: 1.1em;
+    }
+
+    #menuButton{
+      height: 40px;
+      width: 40px;
+      display: block;
+      float: left;
+      position: absolute;
+      z-index: 10;
+      left: 8px;
+      top: 8px;
+      /* background-color: rgba(0, 0, 0, 0.5); */
+      text-decoration: underline;
+      font-family: military;
+    }
+
+    #menuButtonHide{
+      display: none;
+    }
+
+    #navHide{
+      visibility: hidden;
+    }
+
+    #navImage{
+      height: 80px;
+      width: 80px;
+      position: relative;
+      top: 0px;
+    }
+
+    #navRight{
+      float: right;
+      position: fixed;
+      right: 10px;
+      top: 5px;
+      z-index: 10;
+    }
+
+    #navMobile{
+      transition: .5s ease-in-out all;
+      display: block;
+      position: absolute;
+      z-index: 9;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px){
+  .nav{
+    margin-top: 0px;
+    display: none;
+  }
+
+  .navOne{
+    margin-top: 0px;
+  }
+  .navTwo{
+    margin-top: 0px;
+  }
+
+  #foot{
+    padding-top: 10vh;
+    font-size: 1.1em;
+  }
+
+  #menuButton{
+    height: 40px;
+    width: 40px;
+    display: block;
+    float: left;
+    position: absolute;
+    z-index: 10;
+    left: 8px;
+    top: 8px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    text-decoration: underline;
+    font-family: military;
+  }
+
+  #menuButtonHide{
+    display: none;
+  }
+
+  #navHide{
+    visibility: hidden;
+  }
+
+  #navImage{
+    height: 80px;
+    width: 80px;
+    position: relative;
+    top: 0px;
+  }
+
+  #navRight{
+    float: right;
+    position: fixed;
+    right: 10px;
+    top: 5px;
+    z-index: 10;
+  }
+
+  #navMobile{
+    transition: .5s ease-in-out all;
+    display: block;
+    position: absolute;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }

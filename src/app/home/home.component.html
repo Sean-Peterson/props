@@ -1,53 +1,69 @@
-<div class="container">
-
-  <div id="logo">
-    <img src="/../../assets/images/propsLogo.png" alt="Props Logo">
+<img id="homePic" src="/../../assets/images/bWBlurr.jpeg" alt="Props Craft Brewery Logo">
+<h1 class="bigHeader words ammo" id="veteran">Veteran Owned. <span>Veteran Operated.</span></h1>
+<div id="beers">
+  <div class="row">
+    <img class="col-sm-3  beer" (click)="insertText('blonde')" src="/../../assets/images/blonde.png" alt="Blonde Bomber">
+    <img class="col-sm-3  beer" (click)="insertText('dos')" src="/../../assets/images/dosPilotos.png" alt="Dos Pilotos">
+    <img class="col-sm-3  beer" (click)="insertText('coffin')" src="/../../assets/images/flyingCoffin.png" alt="Flying Coffin">
   </div>
-  <h1 class="bigHeader words ammo" id="veteran">Veteran Owned. Veteran Operated</h1>
-  <div id="beers">
-    <div class="row">
-      <img class="col-sm-3  beer" (click)="insertText('blonde')" src="/../../assets/images/blonde.png" alt="Blonde Bomber">
-      <img class="col-sm-3  beer" (click)="insertText('dos')" src="/../../assets/images/dosPilotos.png" alt="Dos Pilotos">
-      <img class="col-sm-3  beer" (click)="insertText('coffin')" src="/../../assets/images/flyingCoffin.png" alt="Flying Coffin">
-    </div>
-    <h4 class="words beerDescription">{{beerDescription}}</h4>
-    <div class="row">
-      <img class="col-sm-3  beer" (click)="insertText('kings')" src="/../../assets/images/4kings.png" alt="Four Kings">
-      <img class="col-sm-3  beer" (click)="insertText('porter')" src="/../../assets/images/prop-oil-porter.png" alt="Prop Oil Porter">
-      <img class="col-sm-3  beer" (click)="insertText('luckey')" src="/../../assets/images/luckeyO.png" alt="Luckey O'Neill">
-    </div>
+  <h4 class="words beerDescription">{{beerDescription}}</h4>
+  <div class="row">
+    <img class="col-sm-3  beer" (click)="insertText('luckey')" src="/../../assets/images/luckeyO.png" alt="Luckey O'Neill">
+    <img class="col-sm-3  beer" id="smallHide" (click)="insertText('kings')" src="/../../assets/images/4kings.png" alt="Four Kings">
+    <img class="col-sm-3  beer" (click)="insertText('porter')" src="/../../assets/images/prop-oil-porter.png" alt="Prop Oil Porter">
   </div>
   <br>
-  <h3 class="words"><a routerLink="beers">See a list of all of our beers</a></h3>
+  <h3 class="smallHeader words ammo"><a routerLink="beers">Our Beers</a></h3>
+</div>
 
-  <div class="words" id="about">
-    <h1 class="bigHeader ammo">Our Culture</h1>
-    <h2>Brew Beer. <span>Drink Beer.</span> <span>Have Fun Doing it!</span></h2>
-    <h3><a routerLink="culture">Who We Are</a></h3>
+<div class="words" id="about">
+  <h1 class="bigHeader ammo">Our Culture</h1>
+  <h2 class="ammo">Brew Beer. Drink Beer. Have Fun Doing it.</h2>
+  <img src="../../assets/images/glasses.jpeg" alt="Props Craft Brewery">
+  <h3 class="ammo smallHeader"><a routerLink="culture">Who We Are</a></h3>
+</div>
+
+<div class="words" id="visit">
+  <h1 class="bigHeader ammo">Visit Us</h1>
+  <div class="row">
+    <div class="col-sm-4">
+      <h1><a routerLink="pub">Brewery & Grill</a></h1>
+      <span><a href="https://www.google.com/maps/dir//props+brewery+taproom+255+miracle+strip+parkway+fort+walton+beach" target="_blank">Directions</a></span>
+      <br>
+      <span>255 Miracle Strip Pkwy</span>
+      <br>
+      <span>Fort Walton Beach</span>
+      <br>
+      <span>(850) 586-7117 ext. 1</span>
+    </div>
+    <div class="col-sm-4">
+      <h1><a routerLink="taproom">Brewery & Taproom</a></h1>
+      <span><a href="https://www.google.com/maps/dir//props+brewery+taproom+125+lovejoy+road+fort+walton+beach">Directions</a></span>
+      <br>
+      <span>125 Lovejoy Rd</span>
+      <br>
+      <span>Fort Walton Beach</span>
+      <br>
+      <span>(850) 586-7117 ext. 2</span>
+    </div>
+    <div class="col-sm-4">
+      <h1><a routerLink="alehouse">Props Ale House</a></h1>
+      <span><a href="https://www.google.com/maps/place/1128+E+John+Sims+Pkwy,+Niceville,+FL+32578/@30.517169,-86.468605,17z/data=!3m1!4b1!4m5!3m4!1s0x889169ae51419139:0xdbc67dbf52516948!8m2!3d30.5171644!4d-86.4664163" target="_blank">Directions</a></span>
+      <br>
+      <span>1128 E John Sims Pkwy</span>
+      <br>
+      <span>Niceville</span>
+      <br>
+      <span>(850) 586-7117 ext. 2</span>
+    </div>
   </div>
-
-  <div class="words" id="visit">
-    <h1 class="bigHeader ammo">Visit Us</h1>
-    <div class="row">
-      <div class="col-sm-6">
-        <h2><a href="https://www.google.com/maps/dir//props+brewery+taproom+125+lovejoy+road+fort+walton+beach" target="_blank">Brewery & Taproom</a></h2>
-        <span>125 Lovejoy Rd</span>
-        <br>
-        <span>Fort Walton Beach</span>
-      </div>
-      <div class="col-sm-6">
-        <h2><a href="https://www.google.com/maps/dir//props+brewery+taproom+255+miracle+strip+parkway+fort+walton+beach" target="_blank">Brewery & Grill</a></h2>
-        <span>255 Miracle Strip Pkwy</span>
-        <br>
-        <span>Fort Walton Beach</span>
-      </div>
-    </div>
-    <div class="row">
-      <img class="gMaps col-sm-12" src="/../../assets/images/grill.png" alt="">
-    </div>
-    <div class="col-sm-6" id="note">
-      <span>Note: We don't serve food at the taproom, but you can bring food in. Also, feel free to bring your dog in with you for a beer!</span>
-    </div>
+  <div id="map">
+    <img class="gMaps col-sm-12" src="/../../assets/images/aleHouseMap.png" alt="Props Craft Brewery Locations">
+    <a id="mapLeft" target="_blank" href="https://www.google.com/maps/dir//props+brewery+taproom+125+lovejoy+road+fort+walton+beach"></a>
+    <a id="mapRight" target="_blank" href="https://www.google.com/maps/dir//props+brewery+taproom+255+miracle+strip+parkway+fort+walton+beach"></a>
+    <a id="mapNiceville" target="_blank" href="https://www.google.com/maps/place/1128+E+John+Sims+Pkwy,+Niceville,+FL+32578/@30.517169,-86.468605,17z/data=!3m1!4b1!4m5!3m4!1s0x889169ae51419139:0xdbc67dbf52516948!8m2!3d30.5171644!4d-86.4664163"></a>
   </div>
-
+  <div class="col-sm-6" id="note">
+    <span>Note: We don't serve food at the taproom, but feel free to bring food in!</span>
+  </div>
 </div>

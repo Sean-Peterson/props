@@ -9,16 +9,18 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { BeersComponent } from './beers/beers.component';
-import { BlondeComponent } from './beers/blonde/blonde.component';
-import { DosComponent } from './beers/dos/dos.component';
-import { CoffinComponent } from './beers/coffin/coffin.component';
-import { FourKingsComponent } from './beers/four-kings/four-kings.component';
-import { PorterComponent } from './beers/porter/porter.component';
-import { LuckeyComponent } from './beers/luckey/luckey.component';
 import { CultureComponent } from './culture/culture.component';
+import { PubComponent } from './pub/pub.component';
+import { AlehouseComponent } from './alehouse/alehouse.component';
+import { TaproomComponent } from './taproom/taproom.component';
+import { BeerlistComponent } from './beerlist/beerlist.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { OnTap } from './models/onTap.model';
+import { Item } from './models/item.model';
+import { FormsModule } from '@angular/forms';
+import { MenulistComponent } from './menulist/menulist.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -33,16 +35,16 @@ export const firebaseConfig = {
     MenuComponent,
     HomeComponent,
     BeersComponent,
-    BlondeComponent,
-    DosComponent,
-    CoffinComponent,
-    FourKingsComponent,
-    PorterComponent,
-    LuckeyComponent,
-    CultureComponent
+    CultureComponent,
+    PubComponent,
+    TaproomComponent,
+    AlehouseComponent,
+    BeerlistComponent,
+    MenulistComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpModule,
     routing,
     AlertModule.forRoot(),

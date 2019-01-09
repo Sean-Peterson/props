@@ -1,0 +1,22 @@
+h3{
+  margin-top: 1.5vh;
+}
+
+.labels{
+  font-size: 1.5em;
+}
+
+.panel{
+  color: white;
+  padding-top: 15vh;
+}
+
+.smaller{
+  color: #c0c5ce;
+  margin-left: .5vw;
+  font-size: .85em;
+}
+
+#top{
+  padding-top: 10vh;
+}

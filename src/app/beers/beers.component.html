@@ -1,29 +1,24 @@
-<div id="beers">
-  <h1 class="words ammo" id="series">2018 distributed series</h1>
-  <div class="row">
-    <img class="col-sm-3  beer" src="/../../assets/images/flyingCoffin.png" alt="Flying Coffin">
-    <img class="col-sm-3  beer" src="/../../assets/images/dosPilotos.png" alt="Dos Pilotos">
-    <img class="col-sm-3  beer" src="/../../assets/images/blonde.png" alt="Blonde Bomber">
-    <img class="col-sm-3  beer" src="/../../assets/images/4kings.png" alt="Four Kings">
+<div class="all">
+  <div id="beers">
+    <h1 class="words ammo" id="series">{{thisYear}} distributed series</h1>
+    <div class="row">
+      <img class="col-sm-3  beer" (click)="insertText('coffin')" src="/../../assets/images/flyingCoffin.png" alt="Flying Coffin">
+      <img class="col-sm-3  beer" (click)="insertText('dos')" src="/../../assets/images/dosPilotos.png" alt="Dos Pilotos">
+      <img class="col-sm-3  beer" (click)="insertText('blonde')" src="/../../assets/images/blonde.png" alt="Blonde Bomber">
+      <img class="col-sm-3  beer" (click)="insertText('kings')" src="/../../assets/images/4kings.png" alt="Four Kings">
+    </div>
   </div>
-</div>
 
-<h4 class="words">Our Distributed Series can be found in bars, package shops, and grocery stores anywhere between Mobile, AL to Appalachicola, FL and all the way up to Huntsville, AL.</h4>
+  <h4 class="words">Our Distributed Series can be found in bars, package shops, and grocery stores anywhere between Mobile, AL to Appalachicola, FL and all the way up to Huntsville, AL.</h4>
 
-<h1 class="ammo" id="ontap">Beers On Tap</h1>
-<div class="beerMenu">
-  <h4 class="beerName ammo">Blonde Bomber - <span class="beerDescription">Medium-bodied American blonde ale with a light color and a balanced hop/malt combination. This unfiltered and unpasteurized ale finishes clean and dry.</span></h4>
-  <h4 class="beerName ammo">Dos Pilotos Cerveza - <span class="beerDescription">South American style lager that is brewed with pale malts sourced from Patagonia, Chile. Dos Pilotos is an all day drinking beer that pairs perfectly with a lime.</span></h4>
-  <h4 class="beerName ammo">Flying Coffin IPA - <span class="beerDescription">Medium-bodied, balanced IPA that is copper in color with caramel flavors and distinct piney hop qualities. This IPA is infused with Chinook hops and dry-hopped with a Mt. Hood and Cascade hop combination.</span></h4>
-  <h4 class="beerName ammo">4 Kings Brown Ale - <span class="beerDescription">4 Kings is rich in flavor and is seperated from its English counterparts by its slight citrus accent, bitterness, and dry finish.</span></h4>
-  <h4 class="beerName ammo">Prop Oil Porter - <span class="beerDescription">Pours black with a light tan colored head. This porter has a substantial, complex, and flavorful roast character that tastes of dark chocolate and roasted grains. A fan favorite with it's characteristics of being not too sweet nor too bitter with a smooth aftertaste.</span></h4>
-  <h4 class="beerName ammo">Luckey O'Neill Lager - <span class="beerDescription">Vienna style lager. It's light golden-brown coloring combines with a lager's smooth taste which give this lager an all day lawnmower beer feel.</span></h4>
-  <h4 class="beerName ammo">Twin Prop Double IPA- <span class="beerDescription">Take our Flying Coffin and feed it steroids. Our double IPA is boiled for 90 minutes with Zythos hops. Then we dry hop it with a combination of Chinook and more Zythos hops. Twin Prop is robust with sublte "hot" alcohol character and a hop profile that might rip out your tongue.</span></h4>
-  <h4 class="beerName ammo">Black Widow IPA - <span class="beerDescription">Dark in color and colorful in flavor. The experience starts with the bite of an IPA and then is quickly balanced out with the smooth flavor of roasted malts.</span></h4>
-  <h4 class="beerName ammo">Ghost Rider Oatmeal Stout - <span class="beerDescription">Our stout is made with Patagonia Black Peral Malt. This gives it a low roast taste with mild bitterness. We then add oats which increase the smoothness due to the high content of proteins, lipids, and gums.</span></h4>
-  <h4 class="beerName ammo">Rye of the Tiger - <span class="beerDescription">A version of Bier de Garde is made primarily with the rye base malt which gives it a malty body and sweet finish.</span></h4>
-  <h4 class="beerName ammo">Pumpkin Bomb Ale - <span class="beerDescription">Our Pumpkin Ale is released seasonally. We brew it with pumpkin puree, cinnamon, cloves, ginger, and nutmeg to bring out the spices of the season.</span></h4>
-  <h4 class="beerName ammo">Jovie Ale - <span class="beerDescription">A Christmas season classic. Jovie has a nutty, roasted malt profile that is accented with cloves, cinnamon, and honey. Jovie will keep you warm in the cold months with its 6.1% ABV.</span></h4>
-  <br>
-  <br>
+  <h1 class="ammo ontap">Beers On Tap</h1>
+  <div id="beerMenu">
+    <h1 class="beerName ammo" *ngFor="let onTap of onTap | async">
+      <span class="title"> {{onTap.title}} </span>
+      <span class="beerDescription"> {{onTap.style}}</span>
+      <span class="abv">abv {{onTap.abv}} ibu {{onTap.ibu}}</span>
+      <br>
+      <span class="beerDescription"> {{onTap.description}}</span>
+    </h1>
+  </div>
 </div>

@@ -3,6 +3,11 @@ p{
   padding-bottom: 2vh;
 }
 
+.all{
+  background-color: rgb(31, 29, 29);
+  padding: 0px 20px 0px 20px;
+}
+
 .ammo{
   font-family: military;
 }
@@ -12,11 +17,68 @@ p{
   padding-top: 5vh;
 }
 
+.pic{
+  max-height: 40vh;
+  max-width: 33%;
+  padding: 0px 0px 20px 0px;
+}
+
 .words{
   color: white;
+}
+
+#motto{
+  font-size: 2.75em;
+  color: #c0c5ce;
 }
 
 #owners{
   max-height: 60%;
   max-width: 90%;
+}
+
+#top{
+  padding-top: 20vh;
+  font-size: 4em;
+}
+
+#paragraph{
+  padding: 25px 0px 0px 0px;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+@media only screen
+  and (min-device-width: 250px)
+  and (max-device-width: 812px){
+    .pic{
+      max-height: 22vh;
+      max-width: 33%;
+      padding: 0px 0px 20px 0px;
+    }
+
+    #paragraph{
+      font-size: 1em;
+    }
+
+    #top{
+      padding-top: 15vh;
+    }
+}
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px){
+  .pic{
+    max-height: 22vh;
+    max-width: 33%;
+    padding: 0px 0px 20px 0px;
+  }
+
+  #paragraph{
+    font-size: 1em;
+  }
+
+  #top{
+    padding-top: 15vh;
+  }
 }

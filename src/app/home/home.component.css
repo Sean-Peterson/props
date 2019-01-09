@@ -1,20 +1,23 @@
-.ammo{
-  font-family: military;
+a{
+  color: rgb(229, 229, 229);
+  text-decoration: underline;
 }
 
-.beers{
-  padding-top: 10vh;
-  padding-bottom: 22vh;
+.ammo{
+  font-family: military;
+  color: rgb(229, 229, 229);
 }
+
 
 .beer{
   cursor: pointer;
   height: 45%;
-  width: 45%;
+  width: 40%;
 }
 
 .bigHeader{
-  font-size: 3em;
+  font-size: 700%;
+  color: rgb(229, 229, 229);
 }
 
 .col-sm-3{
@@ -23,29 +26,82 @@
 }
 
 .gMaps{
-  max-height: 500px;
+  max-height: 85vh;
+  max-width: 85vw;
+}
+
+
+.smallHeader{
+  font-size: 6em;
 }
 
 .words{
-  color: white;
+  color: rgb(229, 229, 229);
   text-align: center;
 }
 
 #about{
-  padding-bottom: 18vh;
-  padding-top: 18vh;
+  padding-bottom: 6vh;
+  padding-top: 9vh;
+  /* margin-left: -15px;
+  margin-right: -15px; */
+  background-color: rgb(27,25,25);
 }
 
-#logo{
-  text-align: center;
-  min-width: 100%;
-  min-height: 100%;
+#about h3{
+  margin-top: 3vh;
 }
 
-#logo img{
-  margin: 0 auto;
-  height: 90%;
-  width: 90%;
+#about img{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 3vh;
+}
+
+#all{
+  z-index: -1;
+}
+
+#beers{
+  padding-bottom: 5vh;
+}
+
+#beers h3{
+  padding-top: 4vh;
+}
+
+#homePic{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+#mapLeft{
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  width: 15%;
+  height: 20%;
+}
+
+#mapNiceville{
+  display: block;
+  position: absolute;
+  top: 26%;
+  left: 75%;
+  width: 15%;
+  height: 15%;
+}
+
+#mapRight{
+  display: block;
+  position: absolute;
+  top: 80%;
+  left: 28%;
+  width: 15%;
+  height: 15%;
 }
 
 #owners{
@@ -53,27 +109,38 @@
 }
 
 #veteran{
-  margin-bottom: 10vh;
+  padding-top: 85vh;
+  padding-bottom: 10vh;
+  margin-bottom: 0px;
 }
 
 #visit{
-  padding-bottom: 22vh;
+  padding-top: 9vh;
+  position: relative;
 }
 
-#visit h1{
-  padding-bottom: 20px;
+#visit span{
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3) {
+  and (min-device-width: 360px)
+  and (max-device-width: 812px){
     .beerDescription{
       display: none;
     }
 
+    .bigHeader{
+      font-size: 5em;
+    }
+
     .gMaps{
       display: none;
+    }
+
+    .smallHeader{
+      font-size: 3.5em;
     }
 
     #about{
@@ -85,21 +152,105 @@
       display: block;
     }
 
-    #logo{
-      margin-top: 5vh;
+    #beers{
+      background-color: black;
     }
 
-    #logo img{
-      height: 100%;
-      width: 100%;
+    #homePic{
+      position: relative;
+      height: 60vh;
+      width: 100vw;
+      z-index: auto;
+      /* margin-top: -15vh; */
     }
 
     #note{
       margin-top: 2vh;
+      font-size: .8em;
+    }
+
+    #smallHide{
+      display: none;
     }
 
     #veteran{
-      margin-top: 5vh;
-      margin-bottom: 5vh;
+      font-size: 3.5em;
+      background-color: black;
+      padding-top: 3vh;
+      padding-bottom: 0px;
     }
+
+    #visit{
+      background-color: black;
+    }
+
+}
+@media only screen
+  and (min-device-width: 813px)
+  and (max-device-width: 1900px){
+    #veteran span{
+      display: block;
+    }
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px){
+  .beerDescription{
+    display: none;
+  }
+
+  .bigHeader{
+    font-size: 5em;
+  }
+
+  .gMaps{
+    display: none;
+  }
+
+  .smallHeader{
+    font-size: 3.5em;
+  }
+
+  #about{
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+  }
+
+  #about span{
+    display: block;
+  }
+
+  #beers{
+    background-color: black;
+  }
+
+  #homePic{
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+    z-index: auto;
+    /* margin-top: -15vh; */
+  }
+
+  #note{
+    margin-top: 2vh;
+    font-size: .8em;
+  }
+
+  #smallHide{
+    display: none;
+  }
+
+  #veteran{
+    font-size: 3.5em;
+    background-color: black;
+    padding-top: 3vh;
+    padding-bottom: 0px;
+  }
+
+  #visit{
+    background-color: black;
+  }
+
 }
