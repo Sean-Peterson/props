@@ -45,7 +45,7 @@
 }
 
 .ontap{
-  margin: 8vh 10vw 0vw 2vh
+  margin: 8vh 0vw 0vw 2vh
 }
 
 .picCollage .secondrow{
@@ -73,6 +73,11 @@
   text-align: center;
   color: white;
 }
+
+#contractBrew h5{
+  margin-bottom: 0px;
+}
+
 #contractBrew h2{
   padding-top: 10vh;
 }
@@ -90,6 +95,7 @@
 }
 
 #side{
+  color: #c0c5ce;
   text-align: center;
   width: 18%;
   float: right;
@@ -104,6 +110,10 @@
 @media only screen
   and (min-device-width: 360px)
   and (max-device-width: 812px){
+    .beerDescription{
+      display: block;
+    }
+
     #restImage{
       width: 100%;
       height: 100%;
@@ -111,7 +121,7 @@
     }
 
     #name{
-      padding-top: 25vh;
+      padding-top: 10vh;
       font-size: 3em;
     }
 
@@ -121,4 +131,31 @@
       float: none;
       position: relative;
     }
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px){
+  .beerDescription{
+    display: block;
+  }
+
+  #restImage{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  #name{
+    padding-top: 10vh;
+    font-size: 3em;
+  }
+
+  #side{
+    text-align: center;
+    width: 100%;
+    float: none;
+    position: relative;
+  }
+
 }

@@ -164,7 +164,6 @@ transition: .5s ease-in-out all;
     }
 
     #navRight{
-      /* display: none; */
       float: right;
       position: fixed;
       right: 10px;
@@ -179,25 +178,69 @@ transition: .5s ease-in-out all;
       z-index: 9;
       background-color: rgba(0, 0, 0, 0.5);
     }
-
-
-
-}
-/* @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 411px){
-
-    #navMenu{
-      margin-right: 22%;
-    }
-
 }
 @media only screen
-  and (min-device-width: 412px)
-  and (max-device-width: 500px){
+and (min-device-width: 320px)
+and (max-device-width: 568px){
+  .nav{
+    margin-top: 0px;
+    display: none;
+  }
 
-    #navMenu{
-      margin-right: 29%;
-    }
+  .navOne{
+    margin-top: 0px;
+  }
+  .navTwo{
+    margin-top: 0px;
+  }
 
-} */
+  #foot{
+    padding-top: 10vh;
+    font-size: 1.1em;
+  }
+
+  #menuButton{
+    height: 40px;
+    width: 40px;
+    display: block;
+    float: left;
+    position: absolute;
+    z-index: 10;
+    left: 8px;
+    top: 8px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    text-decoration: underline;
+    font-family: military;
+  }
+
+  #menuButtonHide{
+    display: none;
+  }
+
+  #navHide{
+    visibility: hidden;
+  }
+
+  #navImage{
+    height: 80px;
+    width: 80px;
+    position: relative;
+    top: 0px;
+  }
+
+  #navRight{
+    float: right;
+    position: fixed;
+    right: 10px;
+    top: 5px;
+    z-index: 10;
+  }
+
+  #navMobile{
+    transition: .5s ease-in-out all;
+    display: block;
+    position: absolute;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}

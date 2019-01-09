@@ -13,7 +13,7 @@ hr{
 }
 
 .centered{
-  padding-top: 15vh;
+  padding-top: 10vh;
   text-align: center;
 }
 
@@ -66,6 +66,7 @@ hr{
 }
 
 #menTitle{
+  padding-top: 20vh;
   font-size: 3.5em;
 }
 
@@ -77,3 +78,20 @@ hr{
 #route:hover{
   text-decoration: none;
 }
+
+@media only screen
+  and (min-device-width: 360px)
+  and (max-device-width: 812px){
+    #menTitle{
+      padding-top: 10vh;
+    }
+  }
+
+  @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px){
+    #menTitle{
+      padding-top: 10vh;
+    }
+
+  }

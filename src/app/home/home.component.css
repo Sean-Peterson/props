@@ -192,3 +192,65 @@ a{
       display: block;
     }
 }
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px){
+  .beerDescription{
+    display: none;
+  }
+
+  .bigHeader{
+    font-size: 5em;
+  }
+
+  .gMaps{
+    display: none;
+  }
+
+  .smallHeader{
+    font-size: 3.5em;
+  }
+
+  #about{
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+  }
+
+  #about span{
+    display: block;
+  }
+
+  #beers{
+    background-color: black;
+  }
+
+  #homePic{
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+    z-index: auto;
+    /* margin-top: -15vh; */
+  }
+
+  #note{
+    margin-top: 2vh;
+    font-size: .8em;
+  }
+
+  #smallHide{
+    display: none;
+  }
+
+  #veteran{
+    font-size: 3.5em;
+    background-color: black;
+    padding-top: 3vh;
+    padding-bottom: 0px;
+  }
+
+  #visit{
+    background-color: black;
+  }
+
+}
