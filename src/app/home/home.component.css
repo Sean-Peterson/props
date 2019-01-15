@@ -167,6 +167,11 @@ a:hover{
       border-radius: 0px;
     }
 
+    #about img{
+     width: 95%;
+     height: auto;
+    }
+
     #about span{
       display: block;
     }
@@ -244,6 +249,12 @@ and (max-device-width: 568px){
   #about{
     padding-bottom: 10vh;
     padding-top: 10vh;
+    border-radius: 0px;
+  }
+
+  #about img{
+   width: 95%;
+   height: auto;
   }
 
   #about span{
