@@ -12,7 +12,6 @@ a{
   font-family: military;
 }
 
-
 .mobileNavWords{
   color: white;
   font-size: 1.3em;
@@ -20,28 +19,16 @@ a{
 }
 
 .nav{
+  width: 100vw;
   font-size: 2em;
+  background-color: black;
+  position: fixed;
+  margin: 0;
   z-index: 9;
+  overflow: initial;
+
 }
 
-.navOne{
-  margin-top: 3vh;
-  text-align: right;
-  float: right;
-  position: absolute;
-  right: 20px;
-  z-index: 10;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.navTwo{
-  margin-top: 9vh;
-  text-align: right;
-  float: right;
-  position: absolute;
-  right: 20px;
-  z-index: 10;
-  background-color: rgba(0, 0, 0, 0.5);
-}
 
 .nav a{
   margin-left: .5em;
@@ -50,6 +37,11 @@ a{
   display: inline-block;
   color: rgb(229, 229, 229);
   font-size: .8em;
+}
+
+.navCol{
+  width: 49%;
+  margin: 0;
 }
 
 .show{
@@ -94,17 +86,23 @@ transition: .5s ease-in-out all;
 }
 
 #navImage{
-  height: 10em;
-  width: 10em;
-  float: left;
-  position: absolute;
-  left: 6px;
-  top: 10px;
-  z-index: 10;
+  text-align: left;
+  margin: 0;
+}
+
+#navImage img{
+  margin: 0;
+  width: 18%;
+  height: auto;
 }
 
 #navMobile{
   display: none;
+}
+
+#navText{
+  text-align: right;
+
 }
 
 #soon{
@@ -156,20 +154,20 @@ transition: .5s ease-in-out all;
       visibility: hidden;
     }
 
-    #navImage{
+    #navImage img{
       height: 80px;
       width: 80px;
       position: relative;
       top: 0px;
     }
 
-    #navRight{
+    /* #navImage{
       float: right;
       position: fixed;
       right: 10px;
       top: 5px;
       z-index: 10;
-    }
+    } */
 
     #navMobile{
       transition: .5s ease-in-out all;
