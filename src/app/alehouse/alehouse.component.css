@@ -54,8 +54,7 @@
 }
 
 .picCollage{
-  margin-top: 5vh;
-  margin-left: 5vw;
+  margin: 5vh 8vw 0vh 5vw;
 }
 
 .picCollage .secondrow{
