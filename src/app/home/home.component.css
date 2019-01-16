@@ -64,11 +64,31 @@ a:hover{
   margin-top: 3vh;
 }
 
-#about img{
+@keyframes aboutImageFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  33%{
+    opacity: 1
+  }
+
+  66% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+
+  }
+}
+
+#aboutImage{
   border-radius: 15px;
   width: 60%;
   height: auto;
   margin-bottom: 3vh;
+  animation: aboutImageFadeIn 4s infinite;
 }
 
 #all{
@@ -76,6 +96,7 @@ a:hover{
 }
 
 #beerDescription{
+  margin: 25px 0 0px 0;
   font-size: 2em;
   background-color: rgba(15,15,15,.7);
 }
@@ -126,10 +147,24 @@ a:hover{
   max-width: 100%;
 }
 
+@keyframes veteranFadeIn {
+  0% {
+    font-size: 50%;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+
+  }
+}
+
 #veteran{
   padding-top: 85vh;
   padding-bottom: 10vh;
   margin-bottom: 0px;
+  animation-name: veteranFadeIn;
+  animation-duration: 2.5s;
 }
 
 #visit{
