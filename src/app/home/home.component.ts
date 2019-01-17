@@ -13,6 +13,8 @@ export class HomeComponent implements OnInit {
   public count: number = 0
 
   public ticks: number = 0;
+  
+  public aboutImage: string = '';
 
   public images: { name: string, position: number}[] = [{
     "name": '../../assets/images/glasses.jpeg',
@@ -48,9 +50,9 @@ export class HomeComponent implements OnInit {
   }
 ];
 
-public aboutImage: string =  this.images[this.count]['name'];
 
   ngOnInit() {
+    this.aboutImage = this.images[this.count]['name'];
     let timer = Observable.timer(4000,4000);
     timer.subscribe(tick => {
       if(this.count<7){
