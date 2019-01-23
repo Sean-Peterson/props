@@ -53,7 +53,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.aboutImage = this.images[this.count]['name'];
-    document.getElementById("aboutImage").style.animation='aboutImageFadeIn 4s infinite';
     let timer = Observable.timer(4000,4000);
     timer.subscribe(tick => {
       if(this.count<7){
