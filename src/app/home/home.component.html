@@ -1,16 +1,16 @@
 <img id="homePic" src="/../../assets/images/bWBlurr.jpeg" alt="Props Craft Brewery Logo">
 <h1 class="bigHeader words ammo" id="veteran">Veteran Owned. <span>Veteran Operated.</span></h1>
 <div id="beers">
-  <div class="row">
-    <img class="col-sm-3  beer" (click)="insertText('blonde')" src="/../../assets/images/blonde.png" alt="Blonde Bomber">
-    <img class="col-sm-3  beer" (click)="insertText('dos')" src="/../../assets/images/dosPilotos.png" alt="Dos Pilotos">
-    <img class="col-sm-3  beer" (click)="insertText('coffin')" src="/../../assets/images/flyingCoffin.png" alt="Flying Coffin">
+  <div class="beerImage">
+    <img (click)="insertText('blonde')" src="/../../assets/images/blonde.png" alt="Blonde Bomber">
+    <img (click)="insertText('dos')" src="/../../assets/images/dosPilotos.png" alt="Dos Pilotos">
+    <img (click)="insertText('coffin')" src="/../../assets/images/flyingCoffin.png" alt="Flying Coffin">
   </div>
   <h4 class="words" id="beerDescription">{{beerDescription}}</h4>
-  <div class="row">
-    <img class="col-sm-3  beer" (click)="insertText('luckey')" src="/../../assets/images/luckeyO.png" alt="Luckey O'Neill">
-    <img class="col-sm-3  beer" id="smallHide" (click)="insertText('kings')" src="/../../assets/images/4kings.png" alt="Four Kings">
-    <img class="col-sm-3  beer" (click)="insertText('porter')" src="/../../assets/images/prop-oil-porter.png" alt="Prop Oil Porter">
+  <div class="beerImage">
+    <img (click)="insertText('luckey')" src="/../../assets/images/luckeyO.png" alt="Luckey O'Neill">
+    <img id="smallHide" (click)="insertText('kings')" src="/../../assets/images/4kings.png" alt="Four Kings">
+    <img (click)="insertText('porter')" src="/../../assets/images/prop-oil-porter.png" alt="Prop Oil Porter">
   </div>
   <br>
   <h3 class="smallHeader words ammo"><a routerLink="beers">Our Beers</a></h3>

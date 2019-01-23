@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   public count: number = 0
 
   public ticks: number = 0;
-  
+
   public aboutImage: string = '';
 
   public images: { name: string, position: number}[] = [{
@@ -53,13 +53,12 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.aboutImage = this.images[this.count]['name'];
+    document.getElementById("aboutImage").style.animation='aboutImageFadeIn 4s infinite';
     let timer = Observable.timer(4000,4000);
     timer.subscribe(tick => {
       if(this.count<7){
         this.count = this.count + 1;
         this.aboutImage=this.images[this.count]['name'];
-        // document.getElementById("aboutImage").style.animation='aboutImageFadeIn 6s infinite';
-        // document.getElementById("aboutImage").style.animation-duration='aboutImageFadeIn';
       }else{
         this.count = 0;
         this.aboutImage=this.images[this.count]['name'];

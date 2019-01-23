@@ -1,3 +1,34 @@
+@keyframes aboutImageFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  33%{
+    opacity: 1
+  }
+
+  66% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+
+  }
+}
+
+@keyframes veteranFadeIn {
+  0% {
+    font-size: 50%;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+
+  }
+}
+
 a{
   color: rgb(229, 229, 229);
 }
@@ -14,24 +45,26 @@ a:hover{
 }
 
 
-.beer{
-  cursor: pointer;
-  height: 45%;
-  width: 40%;
+.beerImage {
+  text-align: center;
+  padding-top: 0px;
 }
 
-.beer:hover{
+.beerImage img{
+  text-align: center;
+  width: 20vw;
+  height: auto;
+  margin: 0 4vw 0 4vw;
+}
+
+.beerImage img:hover{
+  cursor: pointer;
   transform: scale(1.1);
 }
 
 .bigHeader{
   font-size: 700%;
   color: rgb(229, 229, 229);
-}
-
-.col-sm-3{
-  margin: 0 auto;
-  padding-top: 30px;
 }
 
 .gMaps{
@@ -64,31 +97,12 @@ a:hover{
   margin-top: 3vh;
 }
 
-@keyframes aboutImageFadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  33%{
-    opacity: 1
-  }
-
-  66% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-
-  }
-}
 
 #aboutImage{
   border-radius: 15px;
   width: 60%;
   height: auto;
   margin-bottom: 3vh;
-  animation: aboutImageFadeIn 4s infinite;
 }
 
 #all{
@@ -147,24 +161,13 @@ a:hover{
   max-width: 100%;
 }
 
-@keyframes veteranFadeIn {
-  0% {
-    font-size: 50%;
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-
-  }
-}
 
 #veteran{
   padding-top: 85vh;
   padding-bottom: 10vh;
   margin-bottom: 0px;
   animation-name: veteranFadeIn;
-  animation-duration: 2.5s;
+  animation-duration: 1s;
 }
 
 #visit{
