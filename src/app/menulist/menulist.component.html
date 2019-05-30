@@ -1,131 +1,133 @@
-<div id="top" *ngIf="!authenticated">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h3 class="panel-title">Sign In</h3>
-    </div>
-    <div class="panel-body">
-      <div>
+<div class="all">
+  <div id="top" *ngIf="!authenticated">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Sign In</h3>
+      </div>
+      <div class="panel-body">
         <div>
-          <label class="labels">User Name:</label>
-          <br>
-          <input #checkUserName>
-        </div>
+          <div>
+            <label class="labels">User Name:</label>
+            <br>
+            <input #checkUserName>
+          </div>
 
-        <div>
-          <label class="labels">Password:</label>
-          <br>
-          <input #checkPassword>
+          <div>
+            <label class="labels">Password:</label>
+            <br>
+            <input #checkPassword>
+          </div>
+          <button class="btn-success" (click)="authenticate(checkUserName.value, checkPassword.value); checkUserName.value=''; checkPassword.value='';">Submit</button>
         </div>
-        <button class="btn-success" (click)="authenticate(checkUserName.value, checkPassword.value); checkUserName.value=''; checkPassword.value='';">Submit</button>
       </div>
     </div>
   </div>
-</div>
-<div *ngIf="authenticated">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h3 class="panel-title">Add a New Item to the Menu</h3>
-    </div>
-    <div class="panel-body">
-      <div>
-        <div>
-          <label class="labels">Title:</label>
-          <br>
-          <input #newTitle>
-        </div>
-
-        <div>
-          <label class="labels">Price:</label>
-          <br>
-          <input #newPrice>
-        </div>
-
-        <div>
-          <label class="labels">Description:</label>
-          <br>
-          <textarea rows="10" cols="50" #newDescription></textarea>
-        </div>
-
-        <div>
-          <label class="labels">Pairing:</label>
-          <br>
-          <input #newPairing>
-        </div>
-        <br>
-
-        <button class="btn-success" (click)="submitForm(newTitle.value, newPrice.value, newDescription.value, newPairing.value); newTitle.value=''; newPrice.value=''; newDescription.value=''; newPairing.value='';">Add</button>
+  <div *ngIf="authenticated">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Add a New Item to the Menu</h3>
       </div>
-    </div>
+      <div class="panel-body">
+        <div>
+          <div>
+            <label class="labels">Title:</label>
+            <br>
+            <input #newTitle>
+          </div>
 
-    <br>
-    <br>
+          <div>
+            <label class="labels">Price:</label>
+            <br>
+            <input #newPrice>
+          </div>
 
-    <div class="all-beer">
-      <div class="beerName ammo" *ngFor="let item of item | async">
-        <h3>Title: <span class="smaller">{{item.title}}</span></h3>
-        <h3>Price: <span class="smaller">${{item.price}}</span></h3>
-        <h3>Description: <span class="smaller">{{item.description}}</span></h3>
-        <h3>Pairing: <span class="smaller">{{item.pairing}}</span></h3>
-        <h3>On Lunch Menu: <span class="smaller">{{item.lunchMenu}}</span></h3>
-        <h3>Starter: <span class="smaller">{{item.starter}}</span></h3>
-        <h3>Soup Salad: <span class="smaller">{{item.soupSalad}}</span></h3>
-        <h3>Sandwich Wrap: <span class="smaller">{{item.sanWrap}}</span></h3>
-        <h3>Entree: <span class="smaller">{{item.entree}}</span></h3>
-        <h3>Burger: <span class="smaller">{{item.burger}}</span></h3>
-        <h3>Side: <span class="smaller">{{item.side}}</span></h3>
-        <button class="btn btn-warning" (click)="editForm.hidden =!editForm.hidden">Edit Item</button>
-        <button class="btn btn-danger" (click)="beginDeletingItem(item)">Delete Item</button>
-        <br>
-        <br>
-        <div #editForm [hidden]=editForm>
-          <div class="form-group">
-            <label class="labels" for="item-title">Title:</label>
-            <input [(ngModel)]="item.title">
+          <div>
+            <label class="labels">Description:</label>
+            <br>
+            <textarea rows="10" cols="50" #newDescription></textarea>
           </div>
-          <div class="form-group">
-            <label class="labels" for="item-price">Price:</label>
-            <input [(ngModel)]="item.price">
+
+          <div>
+            <label class="labels">Pairing:</label>
+            <br>
+            <input #newPairing>
           </div>
-          <div class="form-group">
-            <label class="labels" for="item-description">Description:</label>
-            <input class="form-control" [(ngModel)]="item.description">
-          </div>
-          <div class="form-group">
-            <label class="labels" for="item-pairing">Pairing:</label>
-            <input [(ngModel)]="item.pairing">
-          </div>
-          <div class="form-group">
-            <label class="labels" for="item-aleHouse">On the Lunch Menu?:</label>
-            <input class="checkbox" type="checkbox" [(ngModel)]="item.lunchMenu" [value]="true">
-          </div>
-          <div class="form-group">
-            <label class="labels" for="item-starter">Starter:</label>
-            <input class="checkbox" type="checkbox" [(ngModel)]="item.starter" [value]="true">
-          </div>
-          <div class="form-group">
-            <label class="labels" for="item-soupSalad">Soup Salad:</label>
-            <input class="checkbox" type="checkbox" [(ngModel)]="item.soupSalad" [value]="true">
-          </div>
-          <div class="form-group">
-            <label class="labels" for="item-sanWrap">Sandwich Wrap:</label>
-            <input class="checkbox" type="checkbox" [(ngModel)]="item.sanWrap" [value]="true">
-          </div>
-          <div class="form-group">
-            <label class="labels" for="item-entree">Entree:</label>
-            <input class="checkbox" type="checkbox" [(ngModel)]="item.entree" [value]="true">
-          </div>
-          <div class="form-group">
-            <label class="labels" for="item-burger">Burger:</label>
-            <input class="checkbox" type="checkbox" [(ngModel)]="item.burger" [value]="true">
-          </div>
-          <div class="form-group">
-            <label class="labels" for="item-side">Side:</label>
-            <input class="checkbox" type="checkbox" [(ngModel)]="item.side" [value]="true">
-          </div>
-          <button class="btn btn-success" (click)="editButtonClicked(item)">Submit!</button>
+          <br>
+
+          <button class="btn-success" (click)="submitForm(newTitle.value, newPrice.value, newDescription.value, newPairing.value); newTitle.value=''; newPrice.value=''; newDescription.value=''; newPairing.value='';">Add</button>
         </div>
-        <br>
-        <br>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="all-beer">
+        <div class="beerName ammo" *ngFor="let item of item | async">
+          <h3>Title: <span class="smaller">{{item.title}}</span></h3>
+          <h3>Price: <span class="smaller">${{item.price}}</span></h3>
+          <h3>Description: <span class="smaller">{{item.description}}</span></h3>
+          <h3>Pairing: <span class="smaller">{{item.pairing}}</span></h3>
+          <h3>On Lunch Menu: <span class="smaller">{{item.lunchMenu}}</span></h3>
+          <h3>Starter: <span class="smaller">{{item.starter}}</span></h3>
+          <h3>Soup Salad: <span class="smaller">{{item.soupSalad}}</span></h3>
+          <h3>Sandwich Wrap: <span class="smaller">{{item.sanWrap}}</span></h3>
+          <h3>Entree: <span class="smaller">{{item.entree}}</span></h3>
+          <h3>Burger: <span class="smaller">{{item.burger}}</span></h3>
+          <h3>Side: <span class="smaller">{{item.side}}</span></h3>
+          <button class="btn btn-warning" (click)="editForm.hidden =!editForm.hidden">Edit Item</button>
+          <button class="btn btn-danger" (click)="beginDeletingItem(item)">Delete Item</button>
+          <br>
+          <br>
+          <div #editForm [hidden]=editForm>
+            <div class="form-group">
+              <label class="labels" for="item-title">Title:</label>
+              <input [(ngModel)]="item.title">
+            </div>
+            <div class="form-group">
+              <label class="labels" for="item-price">Price:</label>
+              <input [(ngModel)]="item.price">
+            </div>
+            <div class="form-group">
+              <label class="labels" for="item-description">Description:</label>
+              <input class="form-control" [(ngModel)]="item.description">
+            </div>
+            <div class="form-group">
+              <label class="labels" for="item-pairing">Pairing:</label>
+              <input [(ngModel)]="item.pairing">
+            </div>
+            <div class="form-group">
+              <label class="labels" for="item-aleHouse">On the Lunch Menu?:</label>
+              <input class="checkbox" type="checkbox" [(ngModel)]="item.lunchMenu" [value]="true">
+            </div>
+            <div class="form-group">
+              <label class="labels" for="item-starter">Starter:</label>
+              <input class="checkbox" type="checkbox" [(ngModel)]="item.starter" [value]="true">
+            </div>
+            <div class="form-group">
+              <label class="labels" for="item-soupSalad">Soup Salad:</label>
+              <input class="checkbox" type="checkbox" [(ngModel)]="item.soupSalad" [value]="true">
+            </div>
+            <div class="form-group">
+              <label class="labels" for="item-sanWrap">Sandwich Wrap:</label>
+              <input class="checkbox" type="checkbox" [(ngModel)]="item.sanWrap" [value]="true">
+            </div>
+            <div class="form-group">
+              <label class="labels" for="item-entree">Entree:</label>
+              <input class="checkbox" type="checkbox" [(ngModel)]="item.entree" [value]="true">
+            </div>
+            <div class="form-group">
+              <label class="labels" for="item-burger">Burger:</label>
+              <input class="checkbox" type="checkbox" [(ngModel)]="item.burger" [value]="true">
+            </div>
+            <div class="form-group">
+              <label class="labels" for="item-side">Side:</label>
+              <input class="checkbox" type="checkbox" [(ngModel)]="item.side" [value]="true">
+            </div>
+            <button class="btn btn-success" (click)="editButtonClicked(item)">Submit!</button>
+          </div>
+          <br>
+          <br>
+        </div>
       </div>
     </div>
   </div>

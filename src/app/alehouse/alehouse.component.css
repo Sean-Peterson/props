@@ -78,6 +78,10 @@
   margin: 0 auto;
 }
 
+.title{
+  font-size: 32px;
+}
+
 #name{
   text-align: center;
   padding-top: 20vh;
@@ -91,6 +95,7 @@
 }
 
 #side{
+  background-color: black;
   color: #c0c5ce;
   text-align: center;
   width: 18%;

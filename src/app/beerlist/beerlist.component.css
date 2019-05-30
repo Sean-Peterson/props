@@ -2,6 +2,10 @@ h3{
   margin-top: 1.5vh;
 }
 
+.all{
+  background: black;
+}
+
 .labels{
   font-size: 1.5em;
 }
@@ -18,5 +22,5 @@ h3{
 }
 
 #top{
-  padding-top: 10vh;
+  padding-top: 12vh;
 }

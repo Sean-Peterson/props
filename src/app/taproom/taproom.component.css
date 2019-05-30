@@ -65,6 +65,10 @@
   width: 50px;
 }
 
+.title{
+  font-size: 32px;
+}
+
 #awards{
 
 }
@@ -95,6 +99,7 @@
 }
 
 #side{
+  background-color: black;
   color: #c0c5ce;
   text-align: center;
   width: 18%;
